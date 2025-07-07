@@ -1,5 +1,13 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: hean
+ * @Date: 2025-05-22 09:47:18
+ * @LastEditors: hean
+ * @LastEditTime: 2025-06-23 11:11:47
+-->
 # Vue 2.7 + Vant 多页面应用
-
+-node 版本 v18.19.1
 ## 项目介绍
 
 这是一个基于 Vue 2.7、Vant 组件库的多页面应用，使用 Sass 预处理器和 vw 单位实现响应式布局，通过 Webpack 进行构建打包。

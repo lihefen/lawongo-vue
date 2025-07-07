@@ -33,7 +33,12 @@ function getMultiPageConfig() {
           title: config.title || '默认标题',
           meta: config.meta || [],
           minify: {
-            removeComments: true,
+            html5: true, // 根据HTML5规范解析输入
+            collapseWhitespace: true, // 折叠空白区域
+            preserveLineBreaks: false,
+            minifyCSS: true, // 压缩文内css
+            minifyJS: true, // 压缩文内js
+            removeComments: true, // 移除注释
             collapseWhitespace: true
           }
         })
@@ -52,6 +57,7 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name]/js/[name].[contenthash:8].js', // 按页面名分组
     publicPath: '/',
+    clean: true, // Clean the output directory before emit.
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
