@@ -20,7 +20,8 @@ module.exports = merge(baseConfig, {
     historyApiFallback: {
       rewrites: [
         { from: /^\/$/, to: '/home/index.html' }, // 根路径重定向
-        { from: /^\/about/, to: '/about/index.html' } // 示例：其他页面
+        { from: /^\/about/, to: '/about/index.html' }, // 示例：其他页面
+        { from: /^\/phone-consult/, to: '/phone-consult/index.html' } // 示例：其他页面
       ]
     },
     compress: true

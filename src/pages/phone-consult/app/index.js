@@ -1,4 +1,6 @@
 import CommonHeader from '@/components/CommonHeader.vue';
+import Banner from './components/banner.vue';
+import ConsultationForm from './components/consultation-form/index.vue';
 import { navigateTo } from '@/utils';
 import { Toast } from 'vant';
 
@@ -8,7 +10,9 @@ import { Toast } from 'vant';
  */
 export default {
   components: {
-    CommonHeader
+    CommonHeader,
+    Banner,
+    ConsultationForm
   },
   name: 'HomeApp',
   methods: {

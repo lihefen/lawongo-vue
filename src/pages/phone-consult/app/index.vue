@@ -1,12 +1,9 @@
 <template>
   <div class="home-page">
-    <common-header title="首页" />
+    <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" />
     <div class="content">
-      <van-cell-group>
-        <van-cell title="Vue 2.7 + Vant" value="多页面应用" />
-        <van-cell title="技术栈" value="Sass + vw适配" />
-      </van-cell-group>
-      <van-button type="primary" block @click="showToast">点击测试</van-button>
+      <banner />
+      <consultation-form />
     </div>
   </div>
 </template>

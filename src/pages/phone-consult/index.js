@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { Button, Cell, NavBar, CellGroup, Toast } from 'vant';
+import { Button, Cell, NavBar, CellGroup, Toast, Form, Field, Icon, Popup, Picker } from 'vant';
 import 'vant/lib/index.css';
 import App from './app/index.vue';
 
@@ -9,6 +9,12 @@ Vue.use(Cell);
 Vue.use(NavBar);
 Vue.use(CellGroup);
 Vue.use(Toast);
+Vue.use(Form);
+Vue.use(Field);
+Vue.use(Icon);
+Vue.use(Popup);
+Vue.use(Picker);
+
 
 /**
  * 初始化Vue实例

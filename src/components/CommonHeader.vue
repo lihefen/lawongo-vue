@@ -62,4 +62,8 @@ export default {
 
 <style lang="scss" scoped>
 /* 可以添加自定义样式 */
+// :deep(.van-icon) {
+//   color: rgba(0, 0, 0, 0.7);
+//   font-size: 24px;
+// }
 </style>

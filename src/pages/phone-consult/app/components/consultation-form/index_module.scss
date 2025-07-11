@@ -1,0 +1,359 @@
+.page-container {
+  width: 100%;
+  padding: 0 15px 30px;
+  margin-top: -165px;
+  // overflow: hidden;
+  box-sizing: border-box;
+
+  .consultation-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: inset 0px 1.2px 0px 0px rgba(231, 255, 211, 1);
+    backdrop-filter: blur(8px);
+    background: linear-gradient(180.00deg, rgba(0, 172, 97, 0.8) 2%, rgba(98, 212, 156, 1) 63%, rgba(239, 255, 241, 1) 100%);
+    padding: 0 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .card-header {
+      color: white;
+      padding: 11px 0 22px;
+      /* 增加底部padding，为白色卡片上移留出空间 */
+      position: relative;
+
+      .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 8px;
+        padding: 0 3px;
+
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 25px;
+          margin: 0;
+        }
+
+        /* 右侧价格区域 */
+        .price-area {
+          position: relative;
+          /* 为special-offer提供定位锚点 */
+          text-align: right;
+          padding-top: 25px;
+          /* 为special-offer留出空间 */
+
+          .special-offer {
+            background: linear-gradient(225.57deg, rgba(255, 255, 145, 1) 1%, rgba(196, 255, 147, 1) 100%);
+            color: rgba(0, 134, 76, 1);
+            font-size: 9px;
+            line-height: 11px;
+            font-weight: 500;
+            padding: 3px 4px;
+            border-radius: 12px 12px 12px 0;
+
+            /* 关键：绝对定位 */
+            position: absolute;
+            top: 3px;
+            left: 20px;
+          }
+
+          .price-line {
+            display: flex;
+            align-items: baseline;
+            /* 基线对齐，数字和文字底部看起来更协调 */
+            line-height: 18px;
+            color: #fff;
+          }
+
+          .currency {
+            font-size: 12px;
+            font-weight: 500;
+          }
+
+          .price {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(250, 255, 44, 1);
+            margin: 0 4px;
+          }
+
+          .duration {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 14px;
+
+        li {
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+
+          .van-icon {
+            margin-right: 8px;
+            font-size: 14px;
+          }
+        }
+      }
+
+    }
+
+    /* 白色表单区域 */
+    .form-container {
+      /* 关键点：使用rgba设置背景颜色，实现背景半透明，内容不透明 */
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin: -20px 0 0;
+      /* 向上移动，与绿色区域有重叠感 */
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      position: relative;
+      z-index: 1;
+
+      .form-item {
+        margin-bottom: 15px;
+
+        .field-label {
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          color: #333;
+          margin-bottom: 8px;
+
+          &::after {
+            content: ' *';
+            color: #ee0a24;
+          }
+        }
+
+        :deep(.van-field__control) {
+          font-size: 12px;
+        }
+      }
+
+      /* 定制Vant输入框样式 */
+      .van-cell {
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+        padding: 10px 12px;
+
+        &::after {
+          border-bottom: none;
+          /* 去掉vant默认的底部边框 */
+        }
+      }
+
+      /* 底部提示信息 */
+      .encryption-notice {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #999;
+        margin-top: 20px;
+
+        .van-icon {
+          margin-right: 6px;
+          font-size: 16px;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .service-description-card {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 16px;
+    border: 0.5px solid rgba(236, 237, 236, 1);
+  }
+
+  .service-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f6fffd;
+    /* 非常浅的绿色背景 */
+    border-radius: 12px;
+  }
+
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: linear-gradient(166.93deg, rgba(26, 239, 100, 1) 4%, rgba(0, 184, 45, 1) 100%);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .step-text {
+    font-size: 12px;
+    color: #069456;
+    line-height: 14px;
+  }
+
+  .step-separator {
+    font-size: 18px;
+    color: #069456;
+    padding-bottom: 15px;
+    /* 为了和文字垂直对齐做一点微调 */
+  }
+
+  /* 底部操作区域 */
+  .bottom-action-area {
+    margin-top: 25px;
+  }
+
+  .consult-now-btn {
+    background-color: rgba(6, 148, 86, 0.5);;
+    /* 图片中的按钮绿色 */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+
+    &:not(:disabled) {
+      background-color: #069456;
+    }
+  }
+
+  .final-security-notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #26a69a;
+    /* 绿色文字 */
+  }
+
+  .final-security-notice .van-icon {
+    margin-right: 5px;
+  }
+
+  /* --- 自定义弹窗样式 --- */
+  .custom-selector {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-shrink: 0;
+    /* 防止头部被压缩 */
+  }
+
+  .popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .popup-header .van-icon {
+    color: #999;
+    cursor: pointer;
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    // flex-grow: 1; /* 占据剩余空间 */
+    overflow-y: auto;
+    /* 如果内容过多则滚动 */
+  }
+
+  .tag-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    color: #666666;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border: none;
+
+
+    /* 选中时的样式 */
+    &.selected {
+      background-color: #069456;
+      /* 浅绿色背景 */
+      color: #fff;
+      /* 主题绿色文字 */
+      // font-weight: 500;
+    }
+  }
+
+  .popup-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    /* 与上方内容保留一些间距 */
+    flex-shrink: 0;
+    /* 防止底部被压缩 */
+  }
+
+  /* 自定义确认按钮颜色 */
+  .confirm-btn {
+    background: rgba(6, 148, 86, 0.5);
+    /* 与选中标签统一的深绿色 */
+    border: none;
+    font-size: 16px;
+    height: 48px;
+
+    &.active {
+      background: rgba(6, 148, 86, 1);
+    }
+  }
+
+  .payment-security {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+  }
+
+  .payment-security .van-icon {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
