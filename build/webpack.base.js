@@ -95,13 +95,20 @@ module.exports = {
                   [
                     'postcss-px-to-viewport',
                     {
-                      viewportWidth: 375, // 设计稿宽度
-                      viewportHeight: 667, // 设计稿高度
-                      unitPrecision: 5, // 单位转换后保留的精度
-                      viewportUnit: 'vw', // 希望使用的视口单位
-                      selectorBlackList: ['.ignore', '.hairlines'], // 不转换的类
-                      minPixelValue: 1, // 小于或等于1px不转换为视口单位
-                      mediaQuery: false // 允许在媒体查询中转换px
+                        unitToConvert: 'px',
+                        viewportWidth: 750,
+                        unitPrecision: 5,
+                        propList: ['*'],
+                        viewportUnit: 'vw',
+                        fontViewportUnit: 'vw',
+                        selectorBlackList: [],
+                        minPixelValue: 1,
+                        mediaQuery: false,
+                        replace: true,
+                        include: /\/src\//,
+                        landscape: false,
+                        landscapeUnit: 'vw',
+                        landscapeWidth: 1125,
                     }
                   ]
                 ]
