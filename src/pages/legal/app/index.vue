@@ -14,6 +14,19 @@
             Whatever your situation, LawOnGo offers fast, reliable and affordable legal consulting services. We are committed to making “please lawyer” no longer a luxury option, but a right that everyone has.
         </div>
     </div>
+
+
+    <div class="mod our">
+        <div class="title"></div>
+        <dl>
+            <dt><div class="subTitle"><span></span><p>Private and Family Classes:</p></div></dt>
+            <dd>Marriage and divorce, child custody, inheritance, identity documents, notary and civil registration, real estate transactions and lease audit</dd>
+        </dl>
+    </div>
+
+    <div class="logoBottom">
+
+    </div>
   </div>
 </template>
 
