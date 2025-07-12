@@ -1,24 +1,24 @@
 .page-container {
   width: 100%;
-  padding: 0 15px 30px;
-  margin-top: -165px;
+  padding: 0 30px 60px;
+  margin-top: -330px;
   // overflow: hidden;
   box-sizing: border-box;
 
   .consultation-card {
     width: 100%;
     height: 100%;
-    border-radius: 16px;
-    box-shadow: inset 0px 1.2px 0px 0px rgba(231, 255, 211, 1);
-    backdrop-filter: blur(8px);
+    border-radius: 32px;
+    box-shadow: inset 0px 2.4px 0px 0px rgba(231, 255, 211, 1);
+    backdrop-filter: blur(16px);
     background: linear-gradient(180.00deg, rgba(0, 172, 97, 0.8) 2%, rgba(98, 212, 156, 1) 63%, rgba(239, 255, 241, 1) 100%);
-    padding: 0 12px;
+    padding: 0 24px;
     box-sizing: border-box;
     overflow: hidden;
 
     .card-header {
       color: white;
-      padding: 11px 0 22px;
+      padding: 22px 0 44px;
       /* 增加底部padding，为白色卡片上移留出空间 */
       position: relative;
 
@@ -26,13 +26,13 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 8px;
-        padding: 0 3px;
+        margin-bottom: 16px;
+        padding: 0 6px;
 
         .title {
-          font-size: 20px;
+          font-size: 40px;
           font-weight: 600;
-          line-height: 25px;
+          line-height: 50px;
           margin: 0;
         }
 
@@ -41,46 +41,46 @@
           position: relative;
           /* 为special-offer提供定位锚点 */
           text-align: right;
-          padding-top: 25px;
+          padding-top: 50px;
           /* 为special-offer留出空间 */
 
           .special-offer {
             background: linear-gradient(225.57deg, rgba(255, 255, 145, 1) 1%, rgba(196, 255, 147, 1) 100%);
             color: rgba(0, 134, 76, 1);
-            font-size: 9px;
-            line-height: 11px;
+            font-size: 18px;
+            line-height: 22px;
             font-weight: 500;
-            padding: 3px 4px;
-            border-radius: 12px 12px 12px 0;
+            padding: 6px 8px;
+            border-radius: 24px 24px 24px 0;
 
             /* 关键：绝对定位 */
             position: absolute;
-            top: 3px;
-            left: 20px;
+            top: 6px;
+            left: 40px;
           }
 
           .price-line {
             display: flex;
             align-items: baseline;
             /* 基线对齐，数字和文字底部看起来更协调 */
-            line-height: 18px;
+            line-height: 36px;
             color: #fff;
           }
 
           .currency {
-            font-size: 12px;
+            font-size: 24px;
             font-weight: 500;
           }
 
           .price {
-            font-size: 20px;
+            font-size: 40px;
             font-weight: 600;
             color: rgba(250, 255, 44, 1);
-            margin: 0 4px;
+            margin: 0 8px;
           }
 
           .duration {
-            font-size: 12px;
+            font-size: 24px;
           }
         }
       }
@@ -89,17 +89,17 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 24px;
+        line-height: 28px;
 
         li {
-          margin-bottom: 8px;
+          margin-bottom: 16px;
           display: flex;
           align-items: center;
 
           .van-icon {
-            margin-right: 8px;
-            font-size: 14px;
+            margin-right: 16px;
+            font-size: 28px;
           }
         }
       }
@@ -110,23 +110,23 @@
     .form-container {
       /* 关键点：使用rgba设置背景颜色，实现背景半透明，内容不透明 */
       background-color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      margin: -20px 0 0;
+      padding: 40px;
+      margin: -40px 0 0;
       /* 向上移动，与绿色区域有重叠感 */
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
       position: relative;
       z-index: 1;
 
       .form-item {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
 
         .field-label {
           display: block;
-          font-size: 14px;
+          font-size: 28px;
           font-weight: 500;
           color: #333;
-          margin-bottom: 8px;
+          margin-bottom: 16px;
 
           &::after {
             content: ' *';
@@ -135,15 +135,15 @@
         }
 
         :deep(.van-field__control) {
-          font-size: 12px;
+          font-size: 24px;
         }
       }
 
       /* 定制Vant输入框样式 */
       .van-cell {
-        border-radius: 8px;
-        border: 1px solid #e0e0e0;
-        padding: 10px 12px;
+        border-radius: 16px;
+        border: 2px solid #e0e0e0;
+        padding: 20px 24px;
 
         &::after {
           border-bottom: none;
@@ -155,13 +155,13 @@
       .encryption-notice {
         display: flex;
         align-items: center;
-        font-size: 12px;
+        font-size: 24px;
         color: #999;
-        margin-top: 20px;
+        margin-top: 40px;
 
         .van-icon {
-          margin-right: 6px;
-          font-size: 16px;
+          margin-right: 12px;
+          font-size: 32px;
           color: #999;
         }
       }
@@ -169,28 +169,28 @@
   }
 
   .service-description-card {
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 16px;
-    border: 0.5px solid rgba(236, 237, 236, 1);
+    padding: 40px;
+    border-radius: 32px;
+    border: 1px solid rgba(236, 237, 236, 1);
   }
 
   .service-title {
-    font-size: 18px;
+    font-size: 36px;
     font-weight: 600;
     color: #333;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
   }
 
   .steps-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #f6fffd;
     /* 非常浅的绿色背景 */
-    border-radius: 12px;
+    border-radius: 24px;
   }
 
   .step-item {
@@ -201,8 +201,8 @@
   }
 
   .step-circle {
-    width: 17px;
-    height: 17px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     background: linear-gradient(166.93deg, rgba(26, 239, 100, 1) 4%, rgba(0, 184, 45, 1) 100%);
     color: white;
@@ -210,25 +210,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   .step-text {
-    font-size: 12px;
+    font-size: 24px;
     color: #069456;
-    line-height: 14px;
+    line-height: 28px;
   }
 
   .step-separator {
-    font-size: 18px;
+    font-size: 36px;
     color: #069456;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     /* 为了和文字垂直对齐做一点微调 */
   }
 
   /* 底部操作区域 */
   .bottom-action-area {
-    margin-top: 25px;
+    margin-top: 50px;
   }
 
   .consult-now-btn {
@@ -236,9 +236,9 @@
     /* 图片中的按钮绿色 */
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 500;
-    height: 48px;
+    height: 96px;
 
     &:not(:disabled) {
       background-color: #069456;
@@ -249,14 +249,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 24px;
     color: #26a69a;
     /* 绿色文字 */
   }
 
   .final-security-notice .van-icon {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   /* --- 自定义弹窗样式 --- */
@@ -264,7 +264,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 15px 20px;
+    padding: 30px 40px;
     box-sizing: border-box;
   }
 
@@ -272,13 +272,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     flex-shrink: 0;
     /* 防止头部被压缩 */
   }
 
   .popup-title {
-    font-size: 18px;
+    font-size: 36px;
     font-weight: 600;
     color: #333;
   }
@@ -291,22 +291,22 @@
   .tags-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 24px;
     // flex-grow: 1; /* 占据剩余空间 */
     overflow-y: auto;
     /* 如果内容过多则滚动 */
   }
 
   .tag-item {
-    height: 40px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 12px;
-    font-size: 12px;
+    padding: 0px 24px;
+    font-size: 24px;
     background-color: #f1f1f1;
     color: #666666;
-    border-radius: 50px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
     border: none;
@@ -324,7 +324,7 @@
 
   .popup-footer {
     margin-top: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     /* 与上方内容保留一些间距 */
     flex-shrink: 0;
     /* 防止底部被压缩 */
@@ -335,8 +335,8 @@
     background: rgba(6, 148, 86, 0.5);
     /* 与选中标签统一的深绿色 */
     border: none;
-    font-size: 16px;
-    height: 48px;
+    font-size: 32px;
+    height: 96px;
 
     &.active {
       background: rgba(6, 148, 86, 1);
@@ -347,13 +347,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 24px;
     color: #999;
   }
 
   .payment-security .van-icon {
-    margin-right: 5px;
-    font-size: 14px;
+    margin-right: 10px;
+    font-size: 28px;
   }
 }

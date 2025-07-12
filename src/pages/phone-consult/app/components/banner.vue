@@ -18,18 +18,18 @@
 .banner {
   background: linear-gradient(180.00deg, rgba(50, 255, 78, 0.27),rgba(255, 255, 255, 0.27) 99%);
   width: 100%;
-  height: 329px;
+  height: 658px;
   display: flex;
   position: relative;
   overflow: hidden;
 
   &-left {
-    margin-top: 36px;
-    margin-left: 22px;
+    margin-top: 72px;
+    margin-left: 44px;
     &-title {
-      width: 207px;
-      font-size: 22px;
-      line-height: 25px;
+      width: 414px;
+      font-size: 44px;
+      line-height: 50px;
       font-weight: 700;
       font-style: italic;
       color: rgba(6, 148, 86, 1);
@@ -38,13 +38,13 @@
       }
     }
     &-desc {
-      margin-top: 22px;
-      width: 154px;
-      font-size: 12px;
-      line-height: 17px;
+      margin-top: 44px;
+      width: 308px;
+      font-size: 24px;
+      line-height: 34px;
       font-weight: 400;
       color: rgba(102, 102, 102, 1);
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
       &-number {
         color: rgba(255, 59, 59, 1);
       }
@@ -52,11 +52,11 @@
   }
 
   &-right {
-    width: 243px;
-    // height: 200px;
+    width: 486px;
+    // height: 400px;
     position: absolute;
-    right: -25px;
-    top: -45px;
+    right: -50px;
+    top: -90px;
     img {
       width: 100%;
       height: 100%;
