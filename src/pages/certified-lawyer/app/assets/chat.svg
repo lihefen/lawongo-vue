@@ -1,0 +1,32 @@
+<svg viewBox="0 0 21.4941 23.9961" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.4941406" height="23.9960938" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_0">
+			<rect width="20" height="20" x="0.75" y="0" fill="rgb(255,255,255)" />
+		</clipPath>
+		<g id="pixso_custom_effect_0">
+			<effect x="0" y="2" visibility="visible" fill="rgb(0,187,152)" fill-opacity="0.505747139" effectType="dropShadow" stdDeviation="2" radius="0" />
+		</g>
+		<filter id="filter_0" width="21.4941406" height="21.4960938" x="0" y="2.5" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_0)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0" dy="2" />
+			<feGaussianBlur stdDeviation="0.666666687" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.733333 0 0 0 0 0.596078 0 0 0 0.505747 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<linearGradient id="paint_linear_0" x1="10.7470684" x2="10.7470684" y1="2.5" y2="16.5" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(254.745,255,254.888)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(213.273,255,235.06)" offset="1" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+	<g id="组合 72">
+		<g id="svg" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+			<rect id="svg" width="20" height="20" x="0.75" y="0" />
+		</g>
+		<g filter="url(#filter_0)">
+			<path id="path" d="M18.7988 7.48633C18.3555 6.51172 17.7227 5.63477 16.9141 4.88281C16.1113 4.13477 15.1758 3.54688 14.1367 3.13672C13.0625 2.71484 11.9219 2.5 10.7461 2.5C9.57031 2.5 8.42969 2.71484 7.35547 3.13672C6.31445 3.54688 5.38086 4.13477 4.57813 4.88281C3.77148 5.63477 3.13867 6.50977 2.69336 7.48633C2.23438 8.50196 2 9.57813 2 10.6895C2 12.6875 2.76953 14.5957 4.17383 16.0938L4.56836 19.4531C4.5918 19.6582 4.7168 19.8379 4.90234 19.9297C4.98828 19.9727 5.08203 19.9961 5.17969 19.9961C5.2832 19.9961 5.39062 19.9688 5.48438 19.916L8.01758 18.4766C8.89648 18.7461 9.8125 18.8828 10.748 18.8828C11.9238 18.8828 13.0645 18.668 14.1387 18.2461C15.1797 17.8359 16.1133 17.2481 16.916 16.5C17.7227 15.7481 18.3555 14.8731 18.8008 13.8965C19.2617 12.8809 19.4941 11.8047 19.4941 10.6934C19.4922 9.58008 19.2578 8.50196 18.7988 7.48633ZM6.98633 11.6406C6.46875 11.6406 6.04688 11.2207 6.04688 10.7012C6.04688 10.1816 6.4668 9.76172 6.98633 9.76172C7.50586 9.76172 7.92578 10.1816 7.92578 10.7012C7.92578 11.2207 7.50586 11.6406 6.98633 11.6406ZM10.7441 11.6406C10.2266 11.6406 9.80469 11.2207 9.80469 10.7012C9.80469 10.1816 10.2246 9.76172 10.7441 9.76172C11.2617 9.76172 11.6836 10.1816 11.6836 10.7012C11.6836 11.2207 11.2617 11.6406 10.7441 11.6406ZM14.5039 11.6406C13.9863 11.6406 13.5645 11.2207 13.5645 10.7012C13.5645 10.1816 13.9844 9.76172 14.5039 9.76172C15.0215 9.76172 15.4434 10.1816 15.4434 10.7012C15.4414 11.2188 15.0215 11.6406 14.5039 11.6406Z" fill="url(#paint_linear_0)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>
