@@ -1,14 +1,12 @@
 import Vue from "vue";
-import { NavBar, Toast, Search, DropdownMenu, DropdownItem } from "vant";
+import { NavBar, Toast, Icon } from "vant";
 import "vant/lib/index.css";
 import App from "./app/index.vue";
 
 // 注册Vant组件
 Vue.use(NavBar);
 Vue.use(Toast);
-Vue.use(Search);
-Vue.use(DropdownMenu);
-Vue.use(DropdownItem);
+Vue.use(Icon);
 
 /**
  * 初始化Vue实例
