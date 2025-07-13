@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { NavBar, Toast, Icon } from "vant";
+import { NavBar, Toast, Icon, Grid, GridItem, Steps, Step } from "vant";
 import "vant/lib/index.css";
 import App from "./app/index.vue";
 
@@ -7,6 +7,10 @@ import App from "./app/index.vue";
 Vue.use(NavBar);
 Vue.use(Toast);
 Vue.use(Icon);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(Steps);
+Vue.use(Step);
 
 /**
  * 初始化Vue实例

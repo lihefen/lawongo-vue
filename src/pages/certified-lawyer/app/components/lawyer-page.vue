@@ -11,7 +11,6 @@
           <div class="type-list">
             <div v-for="item in lawyerTypes" :key="item.text" class="type-item">
               <div class="icon-wrapper">
-                <!-- 注意：请将这里的 src 替换为你自己本地图片的真实路径 -->
                 <img :src="item.image" :alt="item.text" />
               </div>
               <!-- 使用 v-html 来处理换行 -->
@@ -128,6 +127,8 @@
 </template>
 
 <script>
+import { navigateTo } from '@/utils';
+
 export default {
   name: 'LawyerPage',
   data() {
@@ -191,6 +192,20 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    this.getLawyerList();
+  },
+  methods: {
+    getLawyerList() {
+      // TODO: 获取律师列表
+    },
+    navigateTo(value) {
+      const params = {
+        id: value,
+      };
+      navigateTo("lawyer-introduction", params);
+    },
   },
 };
 </script>

@@ -1,4 +1,4 @@
-import CommonHeader from "@/components/CommonHeader.vue";
+// import CommonHeader from "@/components/CommonHeader.vue";
 import { Toast } from "vant";
 
 /**
@@ -6,10 +6,24 @@ import { Toast } from "vant";
  * @description 展示首页内容，包含Vant组件示例
  */
 export default {
-  components: {
-    CommonHeader,
-  },
+  components: {},
   name: "HomeApp",
+  data() {
+    return {
+      stories: [
+        {
+          date: "16-01-2025",
+          title: "TextTextTextTextTextTe",
+          body: "TextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsTextsText",
+        },
+        {
+          date: "16-12-2024",
+          title: "TextTextTextTextTextTe",
+          body: "TextsTextsTextsTextsTextsTextsTextsTextsTextsTexts",
+        },
+      ],
+    };
+  },
   methods: {
     /**
      * 显示提示信息

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" fill="none" customFrame="#000000">
+	<defs>
+		<linearGradient id="paint_linear_9" x1="16" x2="16" y1="0" y2="32" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(93.8864,221.666,255)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(14.2609,163.036,241.339)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<clipPath id="clipPath_1">
+			<rect width="22" height="22" x="5" y="6" fill="rgb(255,255,255)" />
+		</clipPath>
+		<linearGradient id="paint_linear_10" x1="16.0000038" x2="16.0000038" y1="7.66210938" y2="25.9465542" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,254.745,254.745)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(227.182,248.083,255)" offset="1" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+	<g id="组合 737">
+		<circle id="椭圆 128" cx="16" cy="16" r="16" fill="url(#paint_linear_9)" />
+		<g id="anquan-3" clip-path="url(#clipPath_1)" customFrame="url(#clipPath_1)">
+			<rect id="anquan-3" width="22" height="22" x="5" y="6" />
+			<path id="path" d="M23.5289 10.3021L22.7956 10.3021C22.7956 10.3021 21.0844 10.2532 19.3733 9.56878C17.6133 8.83544 16.44 8.00433 16.44 8.00433L16 7.66211L15.56 7.95544C15.56 7.95544 14.3867 8.78655 12.6267 9.51989C10.9156 10.2532 9.20445 10.2532 9.20445 10.2532L8.47112 10.2532L8.47112 17.9777C8.47112 21.8399 13.36 25.9466 16 25.9466C18.64 25.9466 23.5289 21.8399 23.5289 17.9777L23.5289 10.3021ZM21.3778 13.7243L15.9511 19.1999C15.8044 19.3466 15.6089 19.3954 15.4133 19.3954C15.2667 19.3954 15.0711 19.3466 14.9733 19.2488L11.3067 16.3154C11.0133 16.071 10.9156 15.5821 11.2089 15.2888C11.4533 14.9954 11.9422 14.8977 12.2356 15.191L15.4133 17.7332L20.4 12.7466C20.6933 12.4532 21.1333 12.4532 21.4267 12.7466C21.72 13.0399 21.6711 13.431 21.3778 13.7243Z" fill="url(#paint_linear_10)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>
