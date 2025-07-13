@@ -97,6 +97,7 @@ module.exports = {
                     {
                         unitToConvert: 'px',
                         viewportWidth: 750,
+                        exclude: [/node_modules\/vant/], // 这里排除对vant的转换
                         unitPrecision: 5,
                         propList: ['*'],
                         viewportUnit: 'vw',
@@ -150,6 +151,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
-    ...htmlPlugins
+    ...htmlPlugins,
   ]
 };
