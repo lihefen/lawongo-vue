@@ -1,5 +1,6 @@
 // import CommonHeader from "@/components/CommonHeader.vue";
 import { Toast } from "vant";
+import { getUrlParam, navigateTo } from "@/utils";
 
 /**
  * 首页应用组件
@@ -24,7 +25,22 @@ export default {
       ],
     };
   },
+  created() {
+    this.getLawyerInfo();
+  },
   methods: {
+    getLawyerInfo() {
+      // TODO: 获取律师信息
+      const params = getUrlParam("id");
+      console.log(params);
+    },
+    onClickLeft() {
+      console.log("onClickLeft");
+      navigateTo("certified-lawyer");
+    },
+    onClickRight() {
+      console.log("onClickRight");
+    },
     /**
      * 显示提示信息
      * @returns {void}
