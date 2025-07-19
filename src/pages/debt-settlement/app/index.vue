@@ -16,59 +16,119 @@
 
     <div class="mod benefits">
         <div class="title"></div>
-        <div>
-            <dl style="margin-top: 0;">
-                <dt><span class="icon3"></span>Private and Family Classes</dt>
-                <dd>Marriage and divorce, child custody, inheritance, identity documents, notary and civil registration, real estate transactions and lease audit</dd>
-            </dl>
-            <dl>
-                <dt><span class="icon4"></span>Workplace and working class</dt>
-                <dd>Audit and negotiation of employment contracts, dismissal disputes, wage disputes, work accidents, employee rights defenders and corporate compliance recommendations</dd>
-            </dl>
-            <dl>
-                <dt><span class="icon5"></span>Category Debt and Finance</dt>
-                <dd>Credit cards, loan contract consulting, debt collection and payment negotiation support, how to save yourself from fraud or financial traps?</dd>
-            </dl>
-            <dl>
-                <dt><span class="icon6"></span>Business and Entrepreneurship</dt>
-                <dd>Company registration, business licenses, shareholder agreements, trademarks, intellectual property protection, contract writing and legal review, cooperative disputes and risk avoidance</dd>
-            </dl>
+        <div class="list">
+            <div class="item">
+                <div class="text"><span class="icon1"></span>Large reduction </div>
+                <div class="detail">Usually can be negotiated to reduce 30% ~ 50% or even more of the capital (excluding service fees)</div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item">
+                <div class="text"><span class="icon1"></span>No prepayment required</div>
+                <div class="detail">No charge before successful negotiation, pay based on results, risk can be controlled</div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item">
+                <div class="text"><span class="icon1"></span>Reject catalytic interference</div>
+                <div class="detail">LawOnGo contacts creditors all the time, you are no longer interrupted by phone calls</div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item">
+                <div class="text"><span class="icon1"></span>Clear payment structure</div>
+                <div class="detail">Help develop a manageable payment plan that fits your budget</div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item">
+                <div class="text"><span class="icon1"></span>Legal security transparency</div>
+                <div class="detail">Compliance with Indonesian Consumer Financial Protection and Negotiation Regulations</div>
+            </div>
         </div>
     </div>
 
+    <div class="mod population">
+        <div class="title"></div>
+        <div class="list">
+            <div class="item"><span></span>Credit cards, P2P loans, cash loans, consumer loans, etc.</div>
+
+            <div class="item"><span></span>Currently unable to return minimum payments on time, often charged or fined</div>
+
+
+            <div class="item"><span></span>Hope to conclude debt settlement agreements quickly without bankruptcy and without legal claims</div>
+        </div>
+    </div>
 
     <div class="mod working">
         <div class="title"></div>
         <div class="step">
-            <div class="bar">1.Send inquiry</div>
-            <div class="text">Fill in your legal questions online or upload documents and we will match the right advisor for you.</div>
+            <div class="bar">1.Free consultation</div>
+            <div class="text">Communicate with a LawOnGo debt advisor to analyze important information about the type of debt,
+                number, receiver, and more</div>
             <div class="arrow"></div>
         </div>
         <div class="step">
-            <div class="bar">2.Quick Response</div>
-            <div class="text">The platform will confirm your reservation within 30 minutes and arrange a professional to contact you.</div>
+            <div class="bar">2.Financial diagnosis and strategy design</div>
+            <div class="text">Assess your payment capabilities to determine the right negotiating strategy and reduction space.</div>
             <div class="arrow"></div>
         </div>
         <div class="step">
-            <div class="bar">3.One-to-one communication</div>
-            <div class="text">Consultants answer you via chat, phone, or video calls to maintain privacy and security.</div>
+            <div class="bar">3.Start the negotiation process</div>
+            <div class="text">
+                We will contact each creditor on your behalf to make a reconciliation request and negotiate.<br/>
+                Reconciliation Agreement Confirmation: After successful negotiation, we will submit the official reconciliation letter for you to sign
+
+            </div>
             <div class="arrow"></div>
         </div>
         <div class="step">
-            <div class="bar">4.Continuous Support</div>
-            <div class="text">Choose to pursue follow-up, write documents, mediation suggestions or recommend offline legal resources.</div>
+            <div class="bar">4.Payment & Finish</div>
+            <div class="text">
+                Payment outstanding according to agreement, usually completed within 1-3 months
+            </div>
         </div>
     </div>
 
-    <div class="mod platform">
+    <div class="mod examples">
         <div class="title"></div>
-        <div class="subTitle"><span></span><p>At LawOnGo, we believe that "everyone should have legal support available, regardless of wealth and status."</p></div>
-        <div class="reminder">
-            1. only cooperate with certified lawyers and legal experts to ensure service quality.<br/>
-            2.Transparent price for all services, no hidden fees.<br/>
-            3.Keep your privacy information strictly confidential<br/>
-            4.If you are not satisfied with the service, you can apply for a replacement advisor or money back mechanism support.
+        <div class="exampleImg">
+
         </div>
+
+
+        <div class="reminder">
+            “From billing to the restoration of my freedom, LawOnGo allowed me to settle a credit card debt of Rp 30 million in less than a year.”
+            <div class="review"><span></span>Customer review from Jakarta, July 2024</div>
+        </div>
+    </div>
+
+
+    <div class="mod promise">
+        <div class="title"></div>
+        <div class="list">
+            <div class="item" style="margin-top: 0;">
+                <div class="text"><span class="icon4"></span>Free initial evaluation. </div>
+            </div>
+
+            <div class="item">
+                <div class="text"><span class="icon4"></span>Complete negotiations protect the rights and interests of customers. </div>
+            </div>
+
+            <div class="item">
+                <div class="text"><span class="icon4"></span>Only if the negotiations are successful. </div>
+            </div>
+
+            <div class="item">
+                <div class="text"><span class="icon4"></span>Data privacy and customer data strict confidentiality.</div>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="logoBottom">
@@ -76,9 +136,12 @@
     </div>
 
     <div class="btmBtnGroup">
-        <div class="tips">You are just one click away with professional legal support!</div>
+        <div class="tips">Let us consult for you, reduce your debt and start your life again.</div>
         <div class="btnContent">
-            <a href="javascript:;" class="btn">Experience Now</a>
+            <div class="btns">
+                <a href="javascript:;" class="btn1">Free Evaluation</a>
+                <a href="javascript:;" class="btn2">Apply Now</a>
+            </div>
             <div class="text">Ensure your payment security</div>
         </div>
     </div>
