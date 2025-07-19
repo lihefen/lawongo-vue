@@ -18,8 +18,8 @@
     border-radius: 20px;
     box-sizing: border-box;
     padding: 0 30px 20px;
-    padding-top: 90px;
-    &.why {
+    padding-top: 80px;
+    &.introduction {
         .title {
             position: absolute;
             left: 50%;
@@ -30,44 +30,9 @@
             background: url(./images/title_1.png) no-repeat center center;
             background-size: 100% 100%;
         }
-        .subTitle {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            color: #000;
-            padding-bottom: 10px;
-            span {
-                display: inline-block;
-                width: 44px;
-                height: 40px;
-                background: url(./images/icon_1.png) no-repeat center center;
-                background-size: 100% 100%;
-                margin-top: 6px;
-                margin-right: 10px;
-            }
-            p {
-                flex: 1;
-                line-height: 34px;
-            }
-        }
         .text {
-            display: flex;
             font-size: 24px;
             color: #000;
-            margin-top: 6px;
-            span {
-                display: inline-block;
-                width: 24px;
-                height: 24px;
-                background: url(./images/icon_2.png) no-repeat center center;
-                background-size: 100% 100%;
-                margin-top: 6px;
-                margin-right: 10px;
-            }
-            p {
-                flex: 1;
-                line-height: 34px;
-            }
         }
         .reminder {
             background: #D1FFE6;
@@ -78,7 +43,7 @@
             margin-top: 20px;
         }
     }
-    &.our {
+    &.benefits {
         .title {
             position: absolute;
             left: 50%;

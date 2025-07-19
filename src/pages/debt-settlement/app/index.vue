@@ -3,20 +3,18 @@
     <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" />
     <div class="banner">
     </div>
-    <div class="mod why">
+    <div class="mod introduction">
         <div class="title"></div>
-        <div class="subTitle"><span></span><p>In real life, legal problems are everywhere:</p></div>
-        <div class="text"><span></span><p>Have you ever suffered from unclear contract content?</p></div>
-        <div  class="text"><span></span><p>What is Divorce and Property Sharing?</p></div>
-        <div  class="text"><span></span><p>Is there a dispute over workplace injustice or dismissal?</p></div>
-        <div class="text"><span></span><p>Is there a dispute over workplace injustice or dismissal? Or are you a small business owner who wants to understand business laws and compliance risks?</p></div>
+        <div class="text">
+            Debt settlement is a way to settle debt in a way that is lower than your original amount of debt through negotiations with creditors. LawOnGo will negotiate on your behalf with lenders such as banks, P2P platforms, credit cards and others to help you release heavy debt pressure with less money.
+        </div>
         <div class="reminder">
-            Whatever your situation, LawOnGo offers fast, reliable and affordable legal consulting services. We are committed to making “please lawyer” no longer a luxury option, but a right that everyone has.
+            This is one of LawOnGo’s most core and effective debt reduction services for users who have heavy debt and insufficient income to pay back on a sustained basis.
         </div>
     </div>
 
 
-    <div class="mod our">
+    <div class="mod benefits">
         <div class="title"></div>
         <div>
             <dl style="margin-top: 0;">
