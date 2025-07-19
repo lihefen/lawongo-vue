@@ -134,7 +134,9 @@
     <div class="logoBottom">
 
     </div>
-
+    <a href="javascript:;" class="floatBtn">
+        
+    </a>
     <div class="btmBtnGroup">
         <div class="tips">Let us consult for you, reduce your debt and start your life again.</div>
         <div class="btnContent">
