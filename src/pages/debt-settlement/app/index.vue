@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" />
+    <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
     <div class="banner">
     </div>
     <div class="mod introduction">
