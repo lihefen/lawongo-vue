@@ -3,6 +3,12 @@
     <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
     <div class="banner">
     </div>
+ 
+    <div class="videoList">
+        <div>
+            <iframe width="500" height="300" src="https://youtu.be/Sy4ROOthOg4 "frameborder="0"></iframe>
+        </div>
+    </div>
     <div class="mod team">
         <div class="title"><span></span>Core members of our team</div>
     </div>

@@ -88,12 +88,16 @@
                 align-items: center;
                 font-size: 28px;
                 color: #092217;
-                background: #D1FFE6;
+                background: rgba(209, 255, 230, .8);
                 border-radius: 16px;
                 box-sizing: border-box;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding-top: 14px;
+                padding-bottom: 14px;
                 padding-left: 60px;
+                margin-top: 20px;
+                span {
+                    margin-right: 20px;
+                }
                 .icon2{
                     display: inline-block;
                     width: 40px;
