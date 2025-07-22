@@ -1,0 +1,73 @@
+
+.main {
+    max-width: 750px;
+    padding-bottom: 400px;
+}
+.banner {
+    width: 100%;
+    height: 1420px;
+    background: url(./images/banner.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.headerBanner {
+    width: 100%;
+    height: 667px;
+    background: url(./images/header_banner.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.mod {
+    width: 646px;
+    height: 1000px;
+    background: #11B56D;
+    box-sizing: border-box;
+    margin: 0 auto 0;
+    border-radius: 40px;
+    border: 10px solid #BFF6BF;
+    .title {
+        width: 362px;
+        height: 126px;
+        background: url(./images/title.png) no-repeat center center;
+        background-size: 100% 100%;
+        margin: 20px auto 0;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        width: 586px;
+        background: #fff;
+        box-sizing: border-box;
+        height: 54px;
+        border-radius: 36px;
+        margin: 20px auto 0;
+        font-size: 26px;
+        color: #079456;
+        padding-left: 10px;
+    }
+}
+
+.correct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(./images/icon_1.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+    font-size: 16px;
+    color: #fff;
+    margin: 10px auto 0;
+}
+
+.logoBottom {
+    width: 260px;
+    height: 104px;
+    background: url(./images/logo_bottom.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto 0;
+    margin-top: 100px;
+}
