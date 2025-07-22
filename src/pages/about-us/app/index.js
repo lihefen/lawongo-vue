@@ -1,33 +1,82 @@
-import CommonHeader from '@/components/CommonHeader.vue';
-import { navigateTo } from '@/utils';
-import { Toast } from 'vant';
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
+import CommonHeader from "@/components/CommonHeader.vue";
+import { navigateTo } from "@/utils";
+import { Toast } from "vant";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
 
 export default {
   components: {
     CommonHeader,
     Swiper,
-    SwiperSlide
+    SwiperSlide,
   },
-  name: 'HomeApp',
+  name: "HomeApp",
   data() {
     return {
-        swiperOption: {
-            // 显示分页
-            pagination: {
-                el: '.swiper-pagination',
-            },
+      isExpanded: false,
+      videos: [
+        {
+          id: 1,
+          title: "Nadia",
+          url: "https://www.youtube.com/embed/Sy4ROOthOg4",
         },
+        {
+          id: 2,
+          title: "Tita",
+          url: "https://www.youtube.com/embed/81FNi23lrbc",
+        },
+        {
+          id: 3,
+          title: "Rima",
+          url: "https://www.youtube.com/embed/zq83AsGKCA0",
+        },
+        {
+          id: 4,
+          title: "Farouq",
+          url: "https://www.youtube.com/embed/cT7RI7m3nsw",
+        },
+        {
+          id: 5,
+          title: "Riza",
+          url: "https://www.youtube.com/embed/gM0JwcBT9fM",
+        },
+        {
+          id: 6,
+          title: "Edo",
+          url: "https://www.youtube.com/embed/2NU1o2yATrU",
+        },
+      ],
+      swiperOption: {
+        // 显示分页
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      },
     };
   },
   methods: {
+    toggleList() {
+      // 切换状态
+      this.isExpanded = !this.isExpanded;
+
+      const listElement = this.$refs.videoList;
+      if (listElement) {
+        if (this.isExpanded) {
+          // 展开：将 max-height 设置为内容的实际滚动高度
+          listElement.style.maxHeight = `${listElement.scrollHeight}px`;
+        } else {
+          // 收起：移除内联的 max-height 样式，使其恢复到 CSS 中定义的初始折叠高度
+          listElement.style.maxHeight = null;
+        }
+      }
+    },
+
     /**
      * 显示提示信息
      * @returns {void}
      */
     showToast() {
-      Toast('页面应用示例');
-    }
-  }
+      Toast("页面应用示例");
+    },
+  },
 };
