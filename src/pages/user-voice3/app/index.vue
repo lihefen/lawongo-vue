@@ -13,16 +13,16 @@
 
                 <div class="item">2.Penilaian cerdas dalam 2 jam</div>
 
-                <div class="item">3.Negosiasi selesai dalam 7 hari</div>
+                <div class="item">2.Negosiasi selesai dalam 7 hari</div>
             </div>
             
             <div class="correctConent">
                 <div class="correct">
-                    <span></span>Pelepasan dana toko hanya dengan satu klik
+                    <span></span>Reputasi profesional terjaga penuh
                 </div>
 
                 <div class="correct">
-                    <span></span>Tidak perlu khawatir lagi dengan masalah bisnis
+                    <span></span>Enkripsi ketat 100% - data hanya untuk mediasi
                 </div>
             </div>
 
@@ -34,14 +34,13 @@
                             <input type="text">
                             <span class="playIcon"></span>
                         </div>
-                        <div class="text">Klik untuk Mengonsolidasikan Hutang<br/>
-                            Bantuan Satu Klik untuk Dana Toko</div>
+                        <div class="text">Kirim Sekarang untuk Melindungi Karier Anda</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="tips">
-            <span></span>#LawOnGo #UMKM
+            <span></span>#LawOnGo #Berkolus
         </div>
     </div>
 </template>
