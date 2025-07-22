@@ -9,20 +9,20 @@
         <div class="mod">
             <div class="title"></div>
             <div class="list">
-                <div class="item">1.lsi data untuk semua platform dalam 3 menit</div>
+                <div class="item">1.Isi formulir H5 dalam 1 menit</div>
 
-                <div class="item">2.Penilaian cerdas dalam 2 jam</div>
+                <div class="item">2.Penilaian cerdas dalam 1 jam</div>
 
-                <div class="item">2.Negosiasi selesai dalam 7 hari</div>
+                <div class="item">3.Negosiasi tuntas dalam 3 hari tercepat</div>
             </div>
             
             <div class="correctConent">
                 <div class="correct">
-                    <span></span>Reputasi profesional terjaga penuh
+                    <span></span>Buka akses bebas hambatan penerimaan pesanan
                 </div>
 
                 <div class="correct">
-                    <span></span>Enkripsi ketat 100% - data hanya untuk mediasi
+                    <span></span>Pelaksanaan tugas tak pengaruhi status akun
                 </div>
             </div>
 
@@ -34,13 +34,14 @@
                             <input type="text">
                             <span class="playIcon"></span>
                         </div>
-                        <div class="text">Kirim Sekarang untuk Melindungi Karier Anda</div>
+                        <div class="text">Klik untuk Melakukan Penilaian Sekarang dan Tetap<br/>
+                            Dapatkan Penahasilan dari Pesanan</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="tips">
-            <span></span>#LawOnGo #Berkolus
+            <span></span>#LawOnGo #GoJek
         </div>
     </div>
 </template>
