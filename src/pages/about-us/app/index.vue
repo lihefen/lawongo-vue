@@ -6,7 +6,8 @@
  
     <div class="videoList">
         <div>
-            <iframe width="500" height="300" src="https://youtu.be/Sy4ROOthOg4 "frameborder="0"></iframe>
+
+            <iframe width="500" height="300" src="https://m.youtube.com/embed/Sy4ROOthOg4"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <div class="mod team">
