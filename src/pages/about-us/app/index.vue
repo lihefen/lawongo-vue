@@ -149,16 +149,17 @@
                         <div class="tag">2024<div class="dot"></div></div>
                         <div>
                             <div>
-                                <div class="t1"><span class="innerText">Initial Concept:Responding to </span><span class="line"></span></div>
+                                <div class="t1"><span class="innerText">The Launch of the </span><span class="line"></span></div>
                                 
                             </div>
                             <div>
-                                <div class="t2"><span class="innerText">the"Silent Need"</span><span class="line"></span></div>
+                                <div class="t2"><span class="innerText"> LawOnGo Platform</span><span class="line"></span></div>
                             </div>
                         </div>
                     </div>
                     <div class="journeyText">
-                        <div>As Indonesia's fintech industry rapidly develops,an increasing number of individual users and small merchants are falling into the quagmire of multiple lending and debt collection.We have observed that a significant number of users,when confronted with debt,are left in a state of confusion,fear,and a lack of resources or viable solutions.</div>
+                        <div>• The LawOnGo project team was officially established in Jakarta.
+                            • The prototype of the first-generation AI legal Q&A </div>
 
                         <div>Our team of passionate legal experts sees this as a mission, not just a job. We provide personalized, convenient consultations for issues like family matters or contract disputes, aiming to simplify legal support for everyone.</div>
                     </div>
@@ -167,7 +168,15 @@
         </div>
 
 
-
+        <div class="mod life">
+            <div class="title">
+                <span class="lifeLeftIcon"></span>
+                <span class="lifeText">Life at LawOnGo</span>
+                <span class="lifeRightIcon"></span>
+                <span class="lifeLine"></span>
+            </div>
+            <div class="text">Life in Pursuit of Dreams at LawOnGo</div>
+        </div>
 
         <div class="mod platform">
             <div class="title"><span></span>A Trustworthy Platform</div>

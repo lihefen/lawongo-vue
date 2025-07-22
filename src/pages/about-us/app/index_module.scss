@@ -18,6 +18,9 @@
     transition: max-height 0.3s ease-in-out;
     max-height: 475px;
     overflow: hidden;
+    .videoItem {
+        margin-top: 20px;
+    }
   }
   iframe {
     width: 100%;
@@ -346,6 +349,56 @@
                 margin-top:20px;
             }
         }
+    }
+  }
+  &.life {
+    .title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        font-size: 36px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        .lifeLeftIcon {
+            display: inline-block;
+            width: 80px;
+            height: 4px;
+            background: url(./images/life_line_l.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-right: 30px;
+        }
+        .lifeRightIcon {
+            display: inline-block;
+            width: 80px;
+            height: 4px;
+            background: url(./images/life_line_r.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-left: 30px;
+        }
+        .lifeText {
+            position: relative;
+            z-index: 2;
+        }
+        .lifeLine {
+            position: absolute;
+            width: 106px;
+            height: 22px;
+            background: url(./images/life_flag.png) no-repeat center center;
+            background-size: 100% 100%;
+            left: 50%;
+            transform: translate3d(-50%,0,0);
+            bottom: -10px;
+            z-index: 1;
+        }
+    }
+    .text {
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
     }
   }
   &.platform {
