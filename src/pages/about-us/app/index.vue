@@ -22,6 +22,41 @@
         </div>
         <div class="mod team">
             <div class="title"><span></span>Core members of our team</div>
+
+            <div>
+                <Swiper class="teamSwiper" :options="swiperOptionTeam">
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="photo photo1"></div>
+                            <div class="mask">
+                                <div class="name">Ettyta<br/> Ramadhani</div>
+                                <div class="position">CEO</div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="photo photo2"></div>
+                            <div class="mask">
+                                <div class="name">Nadya Nasya <br/>&nbsp</div>
+                                <div class="position">BOC</div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="photo photo3"></div>
+                            <div class="mask">
+                                <div class="name">Riza Zafita<br/>&nbsp</div>
+                                <div class="position">Lawyer</div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                </Swiper>
+            </div>
         </div>
 
 
@@ -82,6 +117,84 @@
 
                 </Swiper>
                 <div class="swiper-pagination" slot="pagination"></div>
+            </div>
+        </div>
+        
+
+        <div class="mod journey">
+            <div class="title"><span></span>Our Development Journey</div>
+            <div class="journeyList">
+                <div class="journeyItem">
+                    <div class="titleText">
+                        <div class="tag">2023<div class="dot"></div></div>
+                        <div>
+                            <div>
+                                <div class="t1"><span class="innerText">Initial Concept:Responding to </span><span class="line"></span></div>
+                                
+                            </div>
+                            <div>
+                                <div class="t2"><span class="innerText">the"Silent Need"</span><span class="line"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journeyText">
+                        <div>As Indonesia's fintech industry rapidly develops,an increasing number of individual users and small merchants are falling into the quagmire of multiple lending and debt collection.We have observed that a significant number of users,when confronted with debt,are left in a state of confusion,fear,and a lack of resources or viable solutions.</div>
+
+                        <div>Our team of passionate legal experts sees this as a mission, not just a job. We provide personalized, convenient consultations for issues like family matters or contract disputes, aiming to simplify legal support for everyone.</div>
+                    </div>
+                </div>
+
+                <div class="journeyItem">
+                    <div class="titleText">
+                        <div class="tag">2024<div class="dot"></div></div>
+                        <div>
+                            <div>
+                                <div class="t1"><span class="innerText">Initial Concept:Responding to </span><span class="line"></span></div>
+                                
+                            </div>
+                            <div>
+                                <div class="t2"><span class="innerText">the"Silent Need"</span><span class="line"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journeyText">
+                        <div>As Indonesia's fintech industry rapidly develops,an increasing number of individual users and small merchants are falling into the quagmire of multiple lending and debt collection.We have observed that a significant number of users,when confronted with debt,are left in a state of confusion,fear,and a lack of resources or viable solutions.</div>
+
+                        <div>Our team of passionate legal experts sees this as a mission, not just a job. We provide personalized, convenient consultations for issues like family matters or contract disputes, aiming to simplify legal support for everyone.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="mod platform">
+            <div class="title"><span></span>A Trustworthy Platform</div>
+            <div class="brand">
+
+            </div>
+            <div class="line"></div>
+            <div class="platData">
+                <div class="leftFower"></div>
+                <div class="dataContent">
+                   <div>
+                        <div class="data">Rp 93000000</div>
+                        <div class="dataName">Total Debt Resolved</div>
+                   </div>
+
+
+                   <div>
+                        <div class="data">4800+</div>
+                        <div class="dataName">Clients Served</div>
+                   </div>
+
+                   <div >
+                        <div  class="data">86.7%</div>
+                        <div class="dataName">Success Rate</div>
+                   </div>
+                </div>
+                <div class="rightFower"></div>
             </div>
         </div>
 

@@ -52,6 +52,10 @@ export default {
           el: ".swiper-pagination",
         },
       },
+      swiperOptionTeam:{
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      }
     };
   },
   methods: {
