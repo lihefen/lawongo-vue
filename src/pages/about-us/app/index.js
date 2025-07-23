@@ -17,35 +17,38 @@ export default {
       showJourney: false,
       videos: [
         {
+            id: 3,
+            title: "Rima",
+            url: "https://www.youtube.com/embed/zq83AsGKCA0",
+          },
+        {
           id: 1,
           title: "Nadia",
           url: "https://www.youtube.com/embed/Sy4ROOthOg4",
         },
         {
-          id: 2,
-          title: "Tita",
-          url: "https://www.youtube.com/embed/81FNi23lrbc",
+            id: 5,
+            title: "Riza",
+            url: "https://www.youtube.com/embed/gM0JwcBT9fM",
         },
         {
-          id: 3,
-          title: "Rima",
-          url: "https://www.youtube.com/embed/zq83AsGKCA0",
-        },
+            id: 6,
+            title: "Edo",
+            url: "https://www.youtube.com/embed/2NU1o2yATrU",
+          },
+        // {
+        //   id: 2,
+        //   title: "Tita",
+        //   url: "https://www.youtube.com/embed/81FNi23lrbc",
+        // },
+       
         {
           id: 4,
           title: "Farouq",
           url: "https://www.youtube.com/embed/cT7RI7m3nsw",
         },
-        {
-          id: 5,
-          title: "Riza",
-          url: "https://www.youtube.com/embed/gM0JwcBT9fM",
-        },
-        {
-          id: 6,
-          title: "Edo",
-          url: "https://www.youtube.com/embed/2NU1o2yATrU",
-        },
+       
+       
       ],
       swiperOption: {
         // 显示分页
