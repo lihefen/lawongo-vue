@@ -242,7 +242,18 @@
     }
   }
   &.journey {
-    padding-left: 60px;
+    padding-bottom: 120px;
+    .journeyBtn {
+        display: block;
+        width: 26px;
+        height: 14px;
+        background: url(./images/arrow.png) no-repeat center center;
+        background-size: 100% 100%;
+        margin: 40px auto 0;
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
     .title {
         display: flex;
         align-items: center;
@@ -259,19 +270,29 @@
           background-size: 100% 100%;
         }
     }
+    .journeyListWrap {
+        &.is-hidden {
+            overflow: hidden;
+            height: 700px;
+        }
+    }
     .journeyList {
         position: relative;
+        padding-left: 60px;
         &:after {
             content: '';
             position: absolute;
             width: 6px;
             background: #069456;
-            left: -34px;
+            left: 24px;
             height: 100%;
             top:0;
             opacity: .18;
+            z-index: 1;
         }
         .journeyItem {
+            position: relative;
+            z-index: 2;
             margin-top: 40px;   
         }
     }
@@ -352,6 +373,7 @@
     }
   }
   &.life {
+    padding-bottom: 40px;
     .title {
         position: relative;
         display: flex;
@@ -399,6 +421,20 @@
         text-align: center;
         font-style: italic;
         margin-top: 20px;
+    }
+    .lifeSwiper {
+        margin-top: 30px;
+        .swiper-slide  {
+            width: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .swiperItem {
+            width: 100%;
+            height: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
     }
   }
   &.platform {

@@ -14,6 +14,7 @@ export default {
   data() {
     return {
       isExpanded: false,
+      showJourney: false,
       videos: [
         {
           id: 1,
@@ -55,7 +56,11 @@ export default {
       swiperOptionTeam:{
         slidesPerView: "auto",
         spaceBetween: 10,
-      }
+      },
+      swiperOptionLife:{
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      },
     };
   },
   methods: {
@@ -74,13 +79,11 @@ export default {
         }
       }
     },
-
-    /**
-     * 显示提示信息
-     * @returns {void}
-     */
     showToast() {
       Toast("页面应用示例");
+    },
+    showJourneyList() {
+        this.showJourney = true;
     },
   },
 };
