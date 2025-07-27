@@ -1,3 +1,11 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: hean
+ * @Date: 2025-07-11 10:36:12
+ * @LastEditors: hean
+ * @LastEditTime: 2025-07-27 11:12:35
+-->
 <template>
   <div class="main">
     <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
@@ -80,7 +88,7 @@
     <div class="btmBtnGroup">
         <div class="tips">You are just one click away with professional legal support!</div>
         <div class="btnContent">
-            <a href="javascript:;" class="btn">Experience Now</a>
+            <a href="lawongo://aiActivity" class="btn">Experience Now</a>
             <div class="text">Ensure your payment security</div>
         </div>
     </div>
