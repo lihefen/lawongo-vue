@@ -14,6 +14,8 @@
         <div class="registerMain">
 
         </div>
+        <div class="title4"></div>
+
         <div class="title5"></div>
         <div class="about-text1">-Core members of our team-</div>
         <div class="aboutImg"></div>
