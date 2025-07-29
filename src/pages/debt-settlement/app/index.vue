@@ -134,7 +134,8 @@
     <div class="logoBottom">
 
     </div>
-    <a href="https://wa.me/6282324599898" class="floatBtn">
+    <a href="https://wa.me/6282324599898
+    " class="floatBtn">
         
     </a>
     <div class="btmBtnGroup">
