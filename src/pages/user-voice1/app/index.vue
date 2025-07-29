@@ -1,6 +1,17 @@
 <template>
     <div class="main">
         <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
+
+        <div class="videoContainer">
+            <div class="videoList" ref="videoList">
+                <div class="videoItem">
+                    <iframe src="https://www.youtube.com/embed/gM0JwcBT9fM" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen />
+                </div>
+            </div>
+        </div>
+
         <div class="banner">
         </div>
         <div class="headerBanner">
