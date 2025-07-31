@@ -28,7 +28,110 @@
     height: 580px;
     background: linear-gradient(to bottom, #DAFFD1 0%, #F7FFF5 15%,#FFFFFF);
     border-radius: 24px;
+    box-sizing: border-box;
+    padding: 60px 20px 20px 20px;
     margin: 0 auto 0;
+    .input {
+        width: 580px;
+        height: 100px;
+        background: #F6F9F6;
+        border-radius: 50px;
+        box-sizing: border-box;
+        border: 1px solid rgba(6,148,86,0.5);
+        margin: 20px auto 0;
+    }
+    .phoneInput {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        .phoneIcon {
+            display: inline-block;
+            width: 48px;
+            height: 25px;
+            background: url(./images/phone_icon.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-left: 20px;
+        }
+        input {
+            flex: 1;
+            height: 100px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            background: none;
+            margin-left: 10px;
+        }
+    }
+    .sendInput {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        input {
+            width: 400px;
+            height: 100px;
+            padding-left: 20px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            background: none;
+        }
+    }
+  
+    .sendBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 124px;
+        height: 68px;
+        background: #CAE2CD;
+        border-radius: 34px;
+        font-size: 28px;
+        color: #069456;
+    }
+    .suggestionsBtn {
+        display: block;
+        width: 592px;
+        height: 134px;
+        background: url(./images/suggestions_btn.png) no-repeat center center;
+        background-size: 100% 100%;
+        margin: 40px auto 0;
+    }
+    .privacy {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 60px;
+        margin-top: 30px;
+        ::v-deep .van-checkbox__icon {
+            width: 30px;
+            height: 30px;
+            background: url(./images/check_1.png) no-repeat center center;
+            background-size: 100% 100%;
+            border: none;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        ::v-deep .van-icon-success:before {
+            display: none;
+        }
+        ::v-deep .van-checkbox__icon .van-icon {
+            border: none;
+            display: none;
+        }
+        ::v-deep .van-checkbox__icon--checked {
+            width: 28px;
+            height: 28px;
+            background: url(./images/check_2.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        font-size: 24px;
+        color: #A7A7A7;
+        span {
+            font-size: 24px;
+            color: #069456;
+        }
+    }
 }
 .title2 {
     width: 218px;

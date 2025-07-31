@@ -1,6 +1,6 @@
 import CommonHeader from '@/components/CommonHeader.vue';
 import { navigateTo } from '@/utils';
-import { Toast } from 'vant';
+import { Toast ,Checkbox} from 'vant';
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 /**
@@ -11,7 +11,8 @@ export default {
     components: {
         CommonHeader,
         Swiper, 
-        SwiperSlide
+        SwiperSlide,
+        Checkbox
     },
     name: 'HomeApp',
     data() {
@@ -28,7 +29,8 @@ export default {
             swiperOptionVoice:{
                 slidesPerView: "auto",
                 spaceBetween: 10,
-              },
+            },
+            checked: false,
         };
     },
     methods: {

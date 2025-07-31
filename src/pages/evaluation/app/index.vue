@@ -12,7 +12,20 @@
         <div class="title1"></div>
         <div class="bar"></div>
         <div class="registerMain">
+            <div class="input phoneInput">
+                <span class="phoneIcon"></span>
+                <input type="text" placeholder="Phone Number"></input>
+            </div>
 
+            <div class="input sendInput">
+                <input type="text" placeholder="Verification Code"></input>
+                <a href="javascript:;" class="sendBtn">send</a>
+            </div>
+            <div class="privacy">
+                <van-checkbox v-model="checked"></van-checkbox>
+                I accept these <span>Terms of Use</span> and <span> Privacy Policy</span>
+            </div>
+            <a href="javascript:;" class="suggestionsBtn"></a>
         </div>
         <div class="title2"></div>
         <div class="teamMain">
