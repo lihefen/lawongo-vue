@@ -32,10 +32,10 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <div>Duration：8 years</div>
-                                <div>served：1000+person</div>
-                                <div>
-                                    Work area：P2P Overdue，Credit Card Default，Multiple Loans
+                                <div class="year"><span>Duration：</span>8 years</div>
+                                <div class="served"><span>served：</span>1000+person</div>
+                                <div class="work">
+                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
                                 </div>
                             </div>
                         </div>
