@@ -15,7 +15,45 @@
 
         </div>
         <div class="title4"></div>
+        <div>
+            <Swiper class="voiceSwiper" :options="swiperOptionVoice">
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="photo">
+                            
+                        </div>
+                        <div class="text">
+                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                        </div>
+                    </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="photo">
+                            
+                        </div>
+                        <div class="text">
+                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="photo">
+                            
+                        </div>
+                        <div class="text">
+                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+
+
+            </Swiper>
+        </div>
         <div class="title5"></div>
         <div class="about-text1">-Core members of our team-</div>
         <div class="aboutImg"></div>
