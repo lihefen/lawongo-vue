@@ -17,6 +17,14 @@ export default {
     data() {
         return {
             activeNames: ['1'],
+            swiperOptionTeam:{
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            },
+            swiperOptionPartner:{
+                slidesPerView: "auto",
+                spaceBetween: 10,
+            },
             swiperOptionVoice:{
                 slidesPerView: "auto",
                 spaceBetween: 10,

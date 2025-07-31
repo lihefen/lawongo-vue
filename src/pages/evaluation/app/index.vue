@@ -14,8 +14,63 @@
         <div class="registerMain">
 
         </div>
+        <div class="title2"></div>
+        <div class="teamMain">
+            <Swiper class="teamSwiper" :options="swiperOptionTeam">
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="content">
+                            <div class="person">
+                                <div class="photo1"></div>
+                                <div class="name">Lawyer Zhang </div>
+                                <div class="starList">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div>Duration：8 years</div>
+                                <div>served：1000+person</div>
+                                <div>
+                                    Work area：P2P Overdue，Credit Card Default，Multiple Loans
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+        <div class="title3"></div>
+        <div class="partnerMain">
+            <Swiper class="partnerSwiper" :options="swiperOptionPartner">
+                <SwiperSlide>
+                    <div class="swiperItem1">
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="swiperItem1">
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="swiperItem1">
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="swiperItem1">
+                    </div>
+                </SwiperSlide>
+
+
+
+
+            </Swiper>
+        </div>
         <div class="title4"></div>
-        <div>
+        <div class="voiceMain">
             <Swiper class="voiceSwiper" :options="swiperOptionVoice">
                 <SwiperSlide>
                     <div class="swiperItem">
