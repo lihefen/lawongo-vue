@@ -158,7 +158,19 @@
                 </van-collapse-item>
             </van-collapse>
         </div>
-        <van-popup v-model="showSuccessDialog">内容</van-popup>
+        <van-popup v-model="showSuccessDialog">
+
+            <div class="successDialog">
+                <div class="successIcon"></div>
+                <div class="successTitle">Successfully</div>
+                <div class="successText">Our mediation advisor will <br/>
+                    contact you via WhatsApp.
+                </div>
+                <a href="javascript:;" class="successBtn1"></a>
+                <a href="javascript:;" class="successBtn2"></a>
+                <a href="javascript:;" class="closeBtn" @click="showSuccessDialog = false"></a>
+            </div>
+        </van-popup>
   </div>
 </template>
 

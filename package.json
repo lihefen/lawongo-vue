@@ -20,10 +20,11 @@
   "dependencies": {
     "core-js": "^3.30.2",
     "swiper": "^5.2.0",
-    "vant": "^2.12.54",
+    "vant": "2.13.2",
     "vue": "^2.7.14",
     "vue-awesome-swiper": "^4.1.1",
-    "vue-router": "^3.6.5"
+    "vue-router": "^3.6.5",
+    "axios": "^0.19.2"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
