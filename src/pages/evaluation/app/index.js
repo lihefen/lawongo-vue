@@ -33,7 +33,7 @@ export default {
             },
             checked: false,
             showSuccessDialog:false,
-            showAgreementDialog:true
+            showAgreementDialog:false
         };
     },
     methods: {

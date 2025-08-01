@@ -128,17 +128,17 @@
         <div class="about-text2">-A Trusted Debt Relief Partner-</div>
         <div class="platWrap">
             <div class="inner">
-                <div>
+                <div class="item">
                     <div class="num">170000<span>+</span></div>
                     <div class="text">Clients Enrolled</div>
                 </div>
 
-                <div>
+                <div class="item">
                     <div class="num">500<span>+</span></div>
                     <div class="text">Dedicated Team</div>
                 </div>
 
-                <div>
+                <div class="item">
                     <div class="num">500<span>4.8</span></div>
                     <div class="text">Dedicated Team</div>
                 </div>
@@ -158,6 +158,11 @@
                 </van-collapse-item>
             </van-collapse>
         </div>
+
+        <div class="btmText">
+            LawOnGo, Your legal advisor！
+        </div>
+        <a href="javascript:;" class="contactBtn"></a>
         <van-popup v-model="showSuccessDialog">
 
             <div class="successDialog">
@@ -172,16 +177,19 @@
             </div>
         </van-popup>
 
-        <van-popup v-model="showAgreementDialog">
-            <div class="successDialog">
-                <div class="successIcon"></div>
-                <div class="successTitle">Successfully</div>
-                <div class="successText">Our mediation advisor will <br/>
-                    contact you via WhatsApp.
+        <van-popup v-model="showAgreementDialog" position="bottom">
+            <div class="agreementDialog">
+                <div class="main">
+                    <div class="content">
+                        MOHON UNTUK MEMBACA SELURUH KEBIJAKAN PRIVASI DENGAN CERMAT DAN SEKSAMA SEBELUM MENGGUNAKAN LAYANAN YANG TERSEDIA DALAM LOWONGO.
+
+                        PERTIWI sangat menghargai dan menjunjung tinggi perlindungan data dan Informasi Pribadi Anda, sehingga PERTIWI berkomitmen untuk melindungi privasi Anda dan memastikan bahwa privasi Anda tidak dapat digunakan oleh pihak-pihak yang tidak bertanggung jawab. Kebijakan Privasi ini memuat penMOHON UNTUK MEMBACA SELURUH KEBIJAKAN PRIVASI DENGAN CERMAT DAN SEKSAMA SEBELUM MENGGUNAKAN LAYANAN YANG TERSEDIA DALAM LOWONGO.
+
+                    </div>
+                    <a href="javascript:;" class="agreementBtn">Get It</a>
                 </div>
-                <a href="javascript:;" class="successBtn1"></a>
-                <a href="javascript:;" class="successBtn2"></a>
-                <a href="javascript:;" class="closeBtn" @click="showSuccessDialog = false"></a>
+                <a href="javascript:;" class="closeBtn" @click="showAgreementDialog = false"></a>
+               
             </div>
         </van-popup>
   </div>

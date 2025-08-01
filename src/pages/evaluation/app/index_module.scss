@@ -342,8 +342,29 @@
     .inner {
        display: flex;
        align-items: center;
-       padding: 0 20px;
-       div {}
+       justify-content: center;
+       padding: 80px 20px 0;
+       .num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #000;
+            font-weight: bold;
+            font-family: DINAlternate-Bold, DINAlternate, PingFangSC-Regular, PingFang SC;
+            text-align: center;
+            span {
+                vertical-align: middle;
+            }
+       }
+       .text {
+            font-size: 22px;
+            color: #8C8C8C;
+            text-align: center;
+       }
+       .item {
+        flex: 1;
+       }
     }
 }
 .title6 {
@@ -356,6 +377,23 @@
 .fagMain {
     margin: 20px auto 0;
 }
+
+.btmText {
+    font-size: 24px;
+    color: #0DC970;
+    text-align: center;
+    margin: 60px auto 0;
+}
+
+.contactBtn {
+    display: block;
+    width: 400px;
+    height: 90px;
+    background: url(./images/contact_btn.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 40px auto 0;
+}
+
 
 .successDialog {
     position: relative;
@@ -403,6 +441,52 @@
         background-size: 100% 100%;
         top:0px;
         right: 0;
+    }
+}
+
+.agreementDialog {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    .main {
+        width: 660px;
+        height: 766px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        box-sizing: border-box;
+        background: #fff;
+        margin: 0 auto 0;
+    }
+    .content {
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+        padding: 40px 30px 0;
+        height: 600px;
+        line-height: 1.5;
+        overflow-y: auto;
+    }
+    .agreementBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 580px;
+        height: 110px;
+        border-radius: 60px;
+        background: #0FB06A;
+        font-size: 52px;
+        font-weight: bold;
+        margin: 40px auto 0;
+        color: #fff;
+    }
+    .closeBtn {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background: url(./images/close.png) no-repeat center center;
+        background-size: 100% 100%;
+        top:0px;
+        right: 50px;
     }
 }
 ::v-deep .van-collapse-item {
