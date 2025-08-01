@@ -171,6 +171,19 @@
                 <a href="javascript:;" class="closeBtn" @click="showSuccessDialog = false"></a>
             </div>
         </van-popup>
+
+        <van-popup v-model="showAgreementDialog">
+            <div class="successDialog">
+                <div class="successIcon"></div>
+                <div class="successTitle">Successfully</div>
+                <div class="successText">Our mediation advisor will <br/>
+                    contact you via WhatsApp.
+                </div>
+                <a href="javascript:;" class="successBtn1"></a>
+                <a href="javascript:;" class="successBtn2"></a>
+                <a href="javascript:;" class="closeBtn" @click="showSuccessDialog = false"></a>
+            </div>
+        </van-popup>
   </div>
 </template>
 

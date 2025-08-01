@@ -32,7 +32,8 @@ export default {
                 spaceBetween: 10,
             },
             checked: false,
-            showSuccessDialog:true
+            showSuccessDialog:false,
+            showAgreementDialog:true
         };
     },
     methods: {
