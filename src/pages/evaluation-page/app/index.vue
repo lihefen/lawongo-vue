@@ -25,6 +25,8 @@
                 C.More than Rp 50 million
             </a>
         </div>
+        <a href="javascript:;" class="backBtn"></a>
+        <a href="javascript:;" class="submitBtn"></a>
 
         <div class="btmLogo"></div>
   </div>

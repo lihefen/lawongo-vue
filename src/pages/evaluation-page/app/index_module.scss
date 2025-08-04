@@ -9,7 +9,7 @@
     height: 14px;
     background: #fff;
     border-radius: 10px;
-    margin: 0 auto 0;
+    margin: 100px auto 0;
     .bar {
         position: absolute;
         left: 0;
@@ -18,10 +18,9 @@
         border-radius: 10px;
         height: 100%;
         background: linear-gradient(
-            180deg,
-            #D4FFEC 11%,
-            #EDFFF7 76%,
-            #fff 100%
+            -90deg,
+            #FF7237 11%,
+            #FFF14C 100%
         );
     }
 }
@@ -78,6 +77,22 @@
             margin-top: 0px;
         }
     }
+}
+.backBtn {
+    display: block;
+    width: 82px;
+    height: 82px;
+    background: url(./images/back_btn.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 40px auto 0;
+}
+.submitBtn {
+    display: block;
+    width: 592px;
+    height: 134px;
+    background: url(./images/submit_btn.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 40px auto 0;
 }
 .btmLogo {
     position: absolute;
