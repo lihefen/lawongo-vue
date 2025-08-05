@@ -11,20 +11,28 @@ module.exports = merge(baseConfig, {
   devtool: 'eval-cheap-module-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, '../dist'), // 注意路径层级
-      watch: true // 启用文件监听
+        directory: path.join(__dirname, '../dist'), // 注意路径层级
+        watch: true // 启用文件监听,
     },
     hot: true,
     open: '/home/index.html', // 指定默认打开页面
     port: 8080,
     historyApiFallback: {
-      rewrites: [
-        { from: /^\/$/, to: '/home/index.html' }, // 根路径重定向
-        { from: /^\/about/, to: '/about/index.html' }, // 示例：其他页面
-        { from: /^\/phone-consult/, to: '/phone-consult/index.html' } // 示例：其他页面
-      ]
+        rewrites: [
+            { from: /^\/$/, to: '/home/index.html' }, // 根路径重定向
+            { from: /^\/about/, to: '/about/index.html' }, // 示例：其他页面
+            { from: /^\/phone-consult/, to: '/phone-consult/index.html' } // 示例：其他页面
+        ]
     },
-    compress: true
+    compress: true,
+    proxy: {
+        '/proxyDev': {
+            target: 'http://123.60.107.0:18080',
+            changeOrigin: true,
+            secure: false,
+            pathRewrite: { '^/proxyDev': '' }
+        }
+    }
   },
   plugins: []
 });

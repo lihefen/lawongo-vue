@@ -1,6 +1,8 @@
 import CommonHeader from '@/components/CommonHeader.vue';
 import { navigateTo } from '@/utils';
 import { Toast } from 'vant';
+import { officialInfo } from 'services/officialInfo.js';
+
 
 /**
  * 首页应用组件
@@ -11,6 +13,11 @@ export default {
     CommonHeader
   },
   name: 'HomeApp',
+  async mounted() {
+        await officialInfo({
+            env: 'proxyDev'
+        });
+    },
   methods: {
     /**
      * 显示提示信息
