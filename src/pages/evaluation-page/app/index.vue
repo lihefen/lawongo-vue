@@ -4,13 +4,14 @@
  * @Author: hean
  * @Date: 2025-07-28 11:42:11
  * @LastEditors: hean
- * @LastEditTime: 2025-07-28 19:33:12
+ * @LastEditTime: 2025-08-08 12:52:51
 -->
 <template>
   <div class="main">
         <div class="step">
             <div class="bar"></div>
         </div>
+        <div class="stepText">1/5</div>
         <div class="title">
             <span class="tag">1</span>What is your approximate total debt amount?
         </div>

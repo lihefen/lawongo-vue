@@ -33,7 +33,8 @@ export default {
             },
             checked: false,
             showSuccessDialog:false,
-            showAgreementDialog:false
+            showAgreementDialog:false,
+            showeValuation:false
         };
     },
     methods: {

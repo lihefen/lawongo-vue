@@ -4,13 +4,20 @@
  * @Author: hean
  * @Date: 2025-07-28 11:42:11
  * @LastEditors: hean
- * @LastEditTime: 2025-07-28 19:33:12
+ * @LastEditTime: 2025-08-08 12:49:05
 -->
 <template>
   <div class="main">
-        <div class="banner"></div>
-        <div class="title1"></div>
-        <div class="bar"></div>
+        <div class="resultMain">
+            <div class="resultTitle">Quiz Result：</div>
+            <div class="resultContent">
+                <div class="circle">
+                    <div class="circleText">20<span>/100</span></div>
+                    <div class="tag"></div>
+                </div>
+            </div>
+        </div>
+        <div class="resultText">High debt risk.Immediate </br>mediation is strongly advised！</div>
         <div class="registerMain">
             <div class="input phoneInput">
                 <span class="phoneIcon"></span>

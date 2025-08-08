@@ -17,6 +17,7 @@
     margin: 0 auto 0;
 }
 .bar {
+    display: block;
     width: 702px;
     height: 193px;
     background: url(./images/bar.png) no-repeat center center;
@@ -394,7 +395,38 @@
     margin: 40px auto 0;
 }
 
-
+.valuationDialog {
+    position: relative;
+    padding-top: 60px;
+    .main {
+        position: relative;
+        background: url(./images/valuation_dialog.png) no-repeat center center;
+        background-size: 100% 100%;
+        width: 660px;
+        height: 796px;
+        margin: 0 auto 0;
+        box-sizing: border-box;
+        .btn {
+            position: absolute;
+            width: 580px;
+            height: 120px;
+            margin: 40px auto 0;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 80px;
+        }
+    }
+    
+    .closeBtn {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background: url(./images/close.png) no-repeat center center;
+        background-size: 100% 100%;
+        top:0px;
+        right: 0;
+    }
+}
 .successDialog {
     position: relative;
     padding-top: 40px;

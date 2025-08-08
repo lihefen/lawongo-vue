@@ -4,13 +4,13 @@
  * @Author: hean
  * @Date: 2025-07-28 11:42:11
  * @LastEditors: hean
- * @LastEditTime: 2025-07-28 19:33:12
+ * @LastEditTime: 2025-08-08 12:55:13
 -->
 <template>
   <div class="main">
         <div class="banner"></div>
         <div class="title1"></div>
-        <div class="bar"></div>
+        <a href="javascript:;" @click="showeValuation = true" class="bar"></a>
         <div class="registerMain">
             <div class="input phoneInput">
                 <span class="phoneIcon"></span>
@@ -163,6 +163,17 @@
             LawOnGo, Your legal advisor！
         </div>
         <a href="javascript:;" class="contactBtn"></a>
+
+        <van-popup v-model="showeValuation">
+            <div class="valuationDialog">
+                <div class="main">
+                    <a href="javascript:;" class="btn"></a>
+                </div>
+                <a href="javascript:;" class="closeBtn" @click="showeValuation = false"></a>
+            </div>
+        </van-popup>
+
+
         <van-popup v-model="showSuccessDialog">
 
             <div class="successDialog">
