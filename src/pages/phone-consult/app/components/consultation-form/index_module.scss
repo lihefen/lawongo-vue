@@ -253,6 +253,9 @@
     font-size: 24px;
     color: #26a69a;
     /* 绿色文字 */
+    span {
+        color: rgba(0, 0, 0, .3);
+    }
   }
 
   .final-security-notice .van-icon {

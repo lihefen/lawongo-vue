@@ -145,11 +145,11 @@ export default {
   name: 'ConsultationForm',
   data() {
     return {
-      selectedTypes: ['Traffic Accident'], // 最终选定的类型数组
+      selectedTypes: [], // 最终选定的类型数组
       tempSelectedTypes: [], // 弹窗中临时选择的类型数组
 
       // telephone 存储的是真实号码
-      telephone: '13912341234', 
+      telephone: '139****1234', 
       // 新增状态标志
       isPhoneFocused: false, 
 
