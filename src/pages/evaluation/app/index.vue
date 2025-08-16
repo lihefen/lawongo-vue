@@ -14,11 +14,11 @@
         <div class="registerMain">
             <div class="input phoneInput">
                 <span class="phoneIcon"></span>
-                <input type="text" placeholder="Phone Number"></input>
+                <input type="text" placeholder="Phone Number" v-model="mobileVal"></input>
             </div>
 
             <div class="input sendInput">
-                <input type="text" placeholder="Verification Code"></input>
+                <input type="text" v-model="codeVal" placeholder="Verification Code"></input>
                 <a href="javascript:;" class="sendBtn">send</a>
             </div>
             <div class="privacy">

@@ -65,7 +65,8 @@ module.exports = {
         vue: 'vue/dist/vue.runtime.esm.js',
         '@': path.resolve(__dirname, '../src'),
         app: path.resolve(__dirname, '../src/app'),
-        services: path.resolve(__dirname,  '../src/services')
+        services: path.resolve(__dirname,  '../src/services'),
+        utils: path.resolve(__dirname,  '../src/utils'),
     }
   },
   module: {
