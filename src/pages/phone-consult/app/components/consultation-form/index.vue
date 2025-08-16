@@ -229,6 +229,8 @@ export default {
       this.showTypeSelector = false; // 关闭弹窗
     },
     submitAll() {
+        console.log('表单提交!');
+        this.$emit('submit',{});
         // 首先再次检查，防止意外情况
         if (!this.isFormValid) {
             console.log('表单无效，无法提交');

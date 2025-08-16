@@ -5,7 +5,7 @@
 }
 .banner {
     width: 100%;
-    height: 537px;
+    height: 542px;
     background: url(./images/banner.png) no-repeat center center;
     background-size: 100% 100%;
 }
@@ -164,7 +164,21 @@
                     .photo1 {
                         width: 149px;
                         height: 149px;
-                        background: url(./images/team_photo_1.png) no-repeat center center;
+                        background: url(./images/law_1.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        margin: -20px auto 0;
+                    }
+                    .photo2 {
+                        width: 149px;
+                        height: 149px;
+                        background: url(./images/law_2.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        margin: -20px auto 0;
+                    }
+                    .photo3 {
+                        width: 149px;
+                        height: 149px;
+                        background: url(./images/law_3.png) no-repeat center center;
                         background-size: 100% 100%;
                         margin: -20px auto 0;
                     }
@@ -529,7 +543,9 @@
    
 }
 
-
+::v-deep .van-collapse-item__wrapper {
+    margin-top: -1px;
+}
 ::v-deep .van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after {
     border: none;
 }

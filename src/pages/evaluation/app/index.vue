@@ -55,6 +55,58 @@
                        
                     </div>
                 </SwiperSlide>
+
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="content">
+                            <div class="person">
+                                <div class="photo2"></div>
+                                <div class="name">Lawyer Zhang </div>
+                                <div class="starList">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="year"><span>Duration：</span>8 years</div>
+                                <div class="served"><span>served：</span>1000+person</div>
+                                <div class="work">
+                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="content">
+                            <div class="person">
+                                <div class="photo3"></div>
+                                <div class="name">Lawyer Zhang </div>
+                                <div class="starList">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="year"><span>Duration：</span>8 years</div>
+                                <div class="served"><span>served：</span>1000+person</div>
+                                <div class="work">
+                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </SwiperSlide>
             </Swiper>
         </div>
         <div class="title3"></div>
@@ -88,7 +140,7 @@
                 <SwiperSlide>
                     <div class="swiperItem">
                         <div class="photo">
-                            
+                            <img src="./images/photo_1.png" width="100%"  alt="">
                         </div>
                         <div class="text">
                             “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
@@ -99,7 +151,7 @@
                 <SwiperSlide>
                     <div class="swiperItem">
                         <div class="photo">
-                            
+                            <img src="./images/photo_2.png" width="100%"  alt="">
                         </div>
                         <div class="text">
                             “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
@@ -110,7 +162,7 @@
                 <SwiperSlide>
                     <div class="swiperItem">
                         <div class="photo">
-                            
+                            <img src="./images/photo_3.png" width="100%"  alt="">
                         </div>
                         <div class="text">
                             “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
@@ -118,7 +170,27 @@
                     </div>
                 </SwiperSlide>
 
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="photo">
+                            <img src="./images/photo_4.png" width="100%"  alt="">
+                        </div>
+                        <div class="text">
+                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                        </div>
+                    </div>
+                </SwiperSlide>
 
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="photo">
+                            <img src="./images/photo_5.png" width="100%"  alt="">
+                        </div>
+                        <div class="text">
+                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                        </div>
+                    </div>
+                </SwiperSlide>
 
             </Swiper>
         </div>
@@ -147,14 +219,14 @@
         <div class="title6"></div>
         <div class="fagMain">
             <van-collapse v-model="activeNames">
-                <van-collapse-item title="标题1" name="1">
-                    代码是写出来给人看的，附带能在机器上运行。
+                <van-collapse-item title="Is this service free" name="1">
+                    Apakah Layanan Ini Gratis
                 </van-collapse-item>
-                <van-collapse-item title="标题2" name="2">
-                    技术无非就是那些开发它的人的共同灵魂。
+                <van-collapse-item title="How soon will I be contacted?" name="2">
+                    Berapa Lama Saya akan di Hubungi
                 </van-collapse-item>
-                <van-collapse-item title="标题3" name="3">
-                    在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。
+                <van-collapse-item title="Will my personal data be leaked？" name="3">
+                    Apakah Data Saya Terlindungi?
                 </van-collapse-item>
             </van-collapse>
         </div>

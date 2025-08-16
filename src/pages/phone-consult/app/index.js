@@ -3,25 +3,31 @@ import Banner from './components/banner.vue';
 import ConsultationForm from './components/consultation-form/index.vue';
 import { navigateTo } from '@/utils';
 import { Toast } from 'vant';
-
-/**
- * 首页应用组件
- * @description 展示首页内容，包含Vant组件示例
- */
+import { officialInfo } from 'services/officialInfo.js';
 export default {
-  components: {
-    CommonHeader,
-    Banner,
-    ConsultationForm
-  },
-  name: 'HomeApp',
-  methods: {
-    /**
-     * 显示提示信息
-     * @returns {void}
-     */
-    showToast() {
-      Toast('页面应用示例');
-    }
+    components: {
+        CommonHeader,
+        Banner,
+        ConsultationForm
+    },
+    name: 'HomeApp',
+    methods: {
+        submit(data) {
+            this.officialInfo();
+            console.log('表单提交成功:', data);
+        },
+        async officialInfo() {
+            await officialInfo({
+                data:{
+                    "type": "app", 
+                    "mobileNumber": '081234567890',
+                    "legalServices": '', 
+                    "typeOfService": '',
+                    "businessField": '',
+                    "detailOfRequired": ''
+                },
+                env: 'proxyDev',
+            });
+        }
   }
 };

@@ -3,7 +3,7 @@
     <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" />
     <div class="content">
       <banner />
-      <consultation-form />
+      <consultation-form @submit="submit" />
     </div>
   </div>
 </template>
