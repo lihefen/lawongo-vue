@@ -3,6 +3,15 @@
     max-width: 750px;
     padding-bottom: 460px;
 }
+.step {
+    display: flex;
+}
 .dataWrap {
-    
+    position: relative;
+    width: 690px;
+    height: 280px;
+    background: url(./images/data_bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    margin: 0 auto 0;
 }

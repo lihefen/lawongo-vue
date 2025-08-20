@@ -8,6 +8,20 @@
 -->
 <template>
   <div class="main">
+        <div class="step">
+            <div class="stepItem">
+                <span>1</span>
+                Questions
+            </div>
+            <div class="stepItem">
+                <span>1</span>
+                Questions
+            </div>
+            <div class="stepItem">
+                <span>1</span>
+                Questions
+            </div>
+        </div>
         <div class="dataWrap">
             
         </div>
