@@ -168,8 +168,8 @@
         
         <div class="askInput">
             <input class="askInputText" type="text" placeholder="Send message...">
-            <div class="askInputBtn">
-            </div>
+            <a href="javascript:;" class="askInputBtn">
+            </a>
         </div>
   </div>
 </template>

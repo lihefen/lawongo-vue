@@ -68,7 +68,15 @@
         color: #006E3E;
         font-weight: bold;
         span {
+            font-size: 22px;
             vertical-align: middle;
+        }
+        .star {
+            display: inline-block;
+            width: 21px;
+            height: 20px;
+            background: url(./images/data_star.png) no-repeat center center;
+            background-size: 100% 100%;
         }
     }
     .dataText {
@@ -331,4 +339,26 @@
 
 .askInput {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 100px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    .askInputText {
+        border: none;
+        width: 520px;
+        height: 80px;
+        border-radius: 80px;
+        border: 1px solid rgba(0,0,0,.2);
+        padding: 0 30px;
+    }
+    .askInputBtn {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: url(./images/map_icon.png) no-repeat center center;
+        background-size: 100% 100%;
+        margin-left: 20px;
+    }
 }
