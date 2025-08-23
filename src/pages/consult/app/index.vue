@@ -23,7 +23,20 @@
             </div>
         </div>
         <div class="dataWrap">
-            
+            <div class="dataContent">
+                <div class="dataItem">
+                    <div class="dataNum">800<span>+</span></div>
+                    <div class="dataText">Consultants</div>
+                </div>
+                <div class="dataItem">
+                    <div class="dataNum">50<span>+</span></div>
+                    <div class="dataText">Lawyers</div>
+                </div>
+                <div class="dataItem">
+                    <div class="dataNum"><span class="star"></span>4.9<span>/5.0</span></div>
+                    <div class="dataText">Assessment</div>
+                </div>
+            </div>
         </div>
         <div class="assistantTitle">— Assistant Lawyer in Communication —</div>
         <div class="robot">
@@ -46,11 +59,117 @@
                 <SwiperSlide>
                     <div class="swiperItem">
                         <div class="content">
+                            <div class="photo">
+                                <div class="photoImg photoImg1"></div>
+                                <div class="logo"></div>
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    <div class="nameText">Lawyer Riza</div>
+                                    <div class="star"><span></span>4.8</div></div>
+                                <div class="experience">
+                                    <span class="year">3 years</span>
+                                    <span class="order">80 Consultants</span>
+                                </div>
+                                <div class="tagList">
+                                    <div class="tagItem">
+                                        <span class="tag">Family Wedding</span>
+                                    </div>
+                                    <div class="tagItem">
+                                        <span class="tag">Criminal cases</span>
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
                         </div>
                     </div>
                 </SwiperSlide>
-
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="content">
+                            <div class="photo">
+                                <div class="photoImg photoImg2"></div>
+                                <div class="logo"></div>
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    <div class="nameText">Lawyer Riza</div>
+                                    <div class="star"><span></span>4.8</div></div>
+                                <div class="experience">
+                                    <span class="year">3 years</span>
+                                    <span class="order">80 Consultants</span>
+                                </div>
+                                <div class="tagList">
+                                    <div class="tagItem">
+                                        <span class="tag">Family Wedding</span>
+                                    </div>
+                                    <div class="tagItem">
+                                        <span class="tag">Criminal cases</span>
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="swiperItem">
+                        <div class="content">
+                            <div class="photo">
+                                <div class="photoImg photoImg3"></div>
+                                <div class="logo"></div>
+                            </div>
+                            <div class="info">
+                                <div class="name">
+                                    <div class="nameText">Lawyer Riza</div>
+                                    <div class="star"><span></span>4.8</div></div>
+                                <div class="experience">
+                                    <span class="year">3 years</span>
+                                    <span class="order">80 Consultants</span>
+                                </div>
+                                <div class="tagList">
+                                    <div class="tagItem">
+                                        <span class="tag">Family Wedding</span>
+                                    </div>
+                                    <div class="tagItem">
+                                        <span class="tag">Criminal cases</span>
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
+        </div>
+
+        <div class="guardBar">
+            <div class="guardIcon"></div>
+            <div class="guardText">Guardian mode enabled</div>
+            <a href="javascript:;" class="arrow"></a>
+        </div>
+
+        <div class="askInfo">
+            <div class="askTop">
+                <div class="askTitle">Suppose you want to ask.</div>
+                <a href="javascript:;" class="changeBtn"><span></span>change</a>
+            </div>
+           <div class="askContent">
+                <span class="askTag">Work accident</span>
+                <span class="askTag">Criminal cases</span>
+                <span class="askTag">Labor Disputes</span>
+                <span class="askTag">Property Disputes</span>
+                <span class="askTag">Family Wedding</span>
+           </div>
+        </div>
+        
+        <div class="askInput">
+            <input class="askInputText" type="text" placeholder="Send message...">
+            <div class="askInputBtn">
+            </div>
         </div>
   </div>
 </template>
