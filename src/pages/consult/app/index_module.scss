@@ -135,12 +135,12 @@
 }
 .lawerSwiper {
     .swiper-slide  { 
-        width: 282px;  
+        width: 318px;
     }
     .content {
-        position: inherit;
-        width: 282px;
-        height: 366px;
+        position: relative;
+        width: 318px;
+        height: 384px;
         background: #F6F7F9;
         border:1px solid #E0EFE5;
         border-radius: 20px;
@@ -336,7 +336,171 @@
     }
    
 }
+.consultListWrap {
+    padding: 0 30px;
+}
+.consultList {
+    position: relative;
+    margin-top: 40px;
+    height: 520px;
+    box-sizing: border-box;
+    padding: 30px 30px 0;
+    border-radius: 20px;
+    background: linear-gradient(
+        180deg,
+        #00B365 0%,
+        #FFFFFF 100%
+    ); 
+    .consultTop {
+        display: flex;
+        align-items: flex-end;
+        .consultTitle {
+            font-size: 24px;
+            color: #fff;
+            flex: 1;
+        }
+        .position {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: #fff;
+            span {
+                display: inline;
+                width: 20px;
+                height: 20px;
+                background: url(./images/position_icon.png) no-repeat center center;
+                background-size: 100% 100%;
+                margin-right: 6px;
+            }
+        }
+    }
+    .info {
+        display: flex;
+        .infoItem {
+            &:nth-child(2) {
+                flex: 1;
+            }
+            .sec {
+                font-size: 22px;
+                color: #000;
+                text-align: center;
+                span {
+                    font-size: 28px;
+                    color: #069456;
+                }
+            }
+            .secText {
+                font-size: 20px;
+                color: #666;
+                text-align: center;
+            }
+            .case {
+                font-size: 22px;
+                color: #000;
+                text-align: center;
+                span {
+                    font-size: 28px;
+                    color: #069456;
+                }
+            }
+            .caseText {
+                font-size: 20px;
+                color: #666;
+                text-align: center;
+            }
+        }
+    }
+    
+}
 
+.consultSwiper {
+    margin-top: 20px;
+    .swiper-slide {
+    }
+    .swiperItem {
+    }
+    .content {
+        position: relative;
+        width: 314px;
+        height: 382px;
+        background: #F6F7F9;
+        border:1px solid #E0EFE5;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background: #fff;
+        overflow: hidden;
+        .photo {
+            position: relative;
+            height: 160px;
+            background: linear-gradient(
+                180deg,
+                #FFFFFF 24%,
+                #A6F8D4 100%
+            ); 
+            overflow: hidden;
+            .photoImg1 {
+                position: absolute;
+                right: 0;
+                left: 0;
+                width: 200px;
+                height: 178px;
+                background: url(./images/consult_photo_1.png) no-repeat center center;
+                background-size: 100% 100%;
+                
+            }
+            .logo {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 186px;
+                height: 150px;
+                background: url(./images/logo_2.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+        .info {
+        }
+    }
+    .topInfo {
+        position: absolute;
+        right: 0;
+        top: 0; 
+        .star {
+            display: flex;
+            align-items: center;
+            span {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(./images/consult_star.png) no-repeat center center;
+                background-size: 100% 100%;
+                vertical-align: middle;
+            }
+            font-size: 24px;
+            color: #FE9E36;
+        }
+        .name {
+            font-size: 28px;
+            color: #000;
+            font-weight: bold;
+        }
+        .tahun {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 28px;
+            border-radius: 28px;
+            font-size: 20px;
+            color: #fff;
+            background: linear-gradient(
+                180deg,
+                #0BB66B 0%,
+                #0AE686 100%
+            ); 
+        }
+    }
+}
 .askInput {
     position: fixed;
     display: flex;

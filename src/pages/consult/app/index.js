@@ -11,6 +11,10 @@ export default {
             swiperOptionLawer:{
                 slidesPerView: "auto",
                 spaceBetween: 10,
+            },
+            swiperOptionConsult:{
+                slidesPerView: "auto",
+                spaceBetween: 10,
             }
         };
     },

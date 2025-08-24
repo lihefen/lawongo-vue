@@ -165,7 +165,46 @@
                 <span class="askTag">Family Wedding</span>
            </div>
         </div>
-        
+        <div class="consultListWrap">
+            <div class="consultList">
+                <div class="consultTop">
+                    <div class="consultTitle">
+                        Next Work Injury Treatment Process Attorneys Waiting for Access
+                    </div>
+                    <div class="position"><span></span>Peradi</div>
+                </div>
+                
+                <Swiper class="consultSwiper" :options="swiperOptionConsult">
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="content">
+                                <div class="photo">
+                                    <div class="photoImg photoImg1"></div>
+                                    <div class="logo"></div>
+                                    <div class="topInfo">
+                                        <div class="star"><span></span>4.8</div>
+                                        <div class="name">Lawyer Riza</div>
+                                        <div class="tahun">
+                                            30 tahun
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="infoItem">
+                                        <div class="sec"><span>18</span> sec.</div>
+                                        <div class="secText">Response <br/>Speed</div>
+                                    </div>
+                                    <div class="infoItem">
+                                        <div class="case"><span>9939</span> products</div>
+                                        <div class="caseText">Resolved <br/>cases</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+        </div>
         <div class="askInput">
             <input class="askInputText" type="text" placeholder="Send message...">
             <a href="javascript:;" class="askInputBtn">
