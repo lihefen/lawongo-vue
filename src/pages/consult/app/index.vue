@@ -8,7 +8,7 @@
 -->
 <template>
   <div class="main">
-        <div class="step">
+        <!-- <div class="step">
             <div class="stepItem active">
                 <span>1</span>
                 Questions
@@ -21,7 +21,7 @@
                 <span>1</span>
                 Questions
             </div>
-        </div>
+        </div> -->
         <div class="dataWrap">
             <div class="dataContent">
                 <div class="dataItem">
@@ -199,18 +199,79 @@
                                         <div class="caseText">Resolved <br/>cases</div>
                                     </div>
                                 </div>
-                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn">Consult</a></div>
+                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn"  @click="consultHandle(6)" >Consult</a></div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="content">
+                                <div class="photo">
+                                    <div class="photoImg photoImg2"></div>
+                                    <div class="logo"></div>
+                                    <div class="topInfo">
+                                        <div class="star"><span></span>4.8</div>
+                                        <div class="name">Lawyer Riza</div>
+                                        <div class="tahun">
+                                            30 tahun
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="infoItem">
+                                        <div class="sec"><span>18</span> sec.</div>
+                                        <div class="secText">Response <br/>Speed</div>
+                                    </div>
+                                    <div class="infoItem">
+                                        <div class="case"><span>9939</span> products</div>
+                                        <div class="caseText">Resolved <br/>cases</div>
+                                    </div>
+                                </div>
+                                <div class="rp">Rp100<a href="javascript:;" @click="consultHandle('4')" class="consultBtn">Consult</a></div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div class="swiperItem">
+                            <div class="content">
+                                <div class="photo">
+                                    <div class="photoImg photoImg2"></div>
+                                    <div class="logo"></div>
+                                    <div class="topInfo">
+                                        <div class="star"><span></span>4.8</div>
+                                        <div class="name">Lawyer Riza</div>
+                                        <div class="tahun">
+                                            30 tahun
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="infoItem">
+                                        <div class="sec"><span>18</span> sec.</div>
+                                        <div class="secText">Response <br/>Speed</div>
+                                    </div>
+                                    <div class="infoItem">
+                                        <div class="case"><span>9939</span> products</div>
+                                        <div class="caseText">Resolved <br/>cases</div>
+                                    </div>
+                                </div>
+                                <div class="rp">Rp100<a href="javascript:;"  @click="consultHandle(5)"  class="consultBtn">Consult</a></div>
                             </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </div>
         </div>
-        <div class="askInput">
-            <input class="askInputText" type="text" placeholder="Send message...">
-            <a href="javascript:;" class="askInputBtn">
-            </a>
+        <div class="askInputWrap">
+            <div class="askInput">
+                <input class="askInputText" type="text" placeholder="Send message...">
+                <a href="javascript:;" class="askInputBtn">
+                </a>
+            </div>
         </div>
+        
   </div>
 </template>
 

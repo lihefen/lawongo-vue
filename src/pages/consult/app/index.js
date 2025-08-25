@@ -19,5 +19,8 @@ export default {
         };
     },
     methods: {
+        consultHandle(id){
+           window.location.href = `lawongo://lawyerPayOneActivity?chatType=1&lawyerId=${id}`;
+        }
     }
 };

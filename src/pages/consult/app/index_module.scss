@@ -376,7 +376,10 @@
     }
     .info {
         display: flex;
+        padding-top: 20px;
         .infoItem {
+            box-sizing: border-box;
+            padding-left: 10px;
             &:nth-child(2) {
                 flex: 1;
             }
@@ -424,12 +427,11 @@
             rgba(151, 255, 210, .12) 100%
         ); 
         border-radius: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 28px;
         color: #069456;
         margin: 40px auto 0;
+        box-sizing: border-box;
+        padding-left: 20px;
     }
     .consultBtn {
         display: flex;
@@ -455,12 +457,13 @@
 .consultSwiper {
     margin-top: 20px;
     .swiper-slide {
+        width: 316px;
     }
     .swiperItem {
     }
     .content {
         position: relative;
-        width: 314px;
+        width: 316px;
         height: 382px;
         background: #F6F7F9;
         border:1px solid #E0EFE5;
@@ -487,6 +490,16 @@
                 background-size: 100% 100%;
                 
             }
+            .photoImg2 {
+                position: absolute;
+                right: 0;
+                left: 0;
+                width: 200px;
+                height: 178px;
+                background: url(./images/consult_photo_2.png) no-repeat center center;
+                background-size: 100% 100%;
+                
+            }
             .logo {
                 position: absolute;
                 right: 0;
@@ -497,13 +510,13 @@
                 background-size: 100% 100%;
             }
         }
-        .info {
-        }
     }
     .topInfo {
         position: absolute;
         right: 0;
         top: 0; 
+        box-sizing: border-box;
+        padding-right: 20px;
         .star {
             display: flex;
             align-items: center;
@@ -540,28 +553,34 @@
         }
     }
 }
-.askInput {
+.askInputWrap {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 100px;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    .askInputText {
-        border: none;
-        width: 520px;
-        height: 80px;
-        border-radius: 80px;
-        border: 1px solid rgba(0,0,0,.2);
-        padding: 0 30px;
-    }
-    .askInputBtn {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        background: url(./images/map_icon.png) no-repeat center center;
-        background-size: 100% 100%;
-        margin-left: 20px;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    z-index: 100;
+    .askInput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 100px;
+        .askInputText {
+            border: none;
+            width: 520px;
+            height: 80px;
+            border-radius: 80px;
+            border: 1px solid rgba(0,0,0,.2);
+            padding: 0 30px;
+        }
+        .askInputBtn {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/map_icon.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-left: 20px;
+        }
     }
 }
