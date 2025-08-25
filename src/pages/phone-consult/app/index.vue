@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" />
+    <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
     <div class="content">
       <banner />
       <consultation-form @submit="submit" />

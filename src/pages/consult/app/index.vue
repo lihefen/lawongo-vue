@@ -199,6 +199,7 @@
                                         <div class="caseText">Resolved <br/>cases</div>
                                     </div>
                                 </div>
+                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn">Consult</a></div>
                             </div>
                         </div>
                     </SwiperSlide>
