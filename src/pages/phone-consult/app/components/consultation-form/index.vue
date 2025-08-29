@@ -149,7 +149,7 @@ export default {
       tempSelectedTypes: [], // 弹窗中临时选择的类型数组
 
       // telephone 存储的是真实号码
-      telephone: '139****1234', 
+      telephone: '', 
       // 新增状态标志
       isPhoneFocused: false, 
 
@@ -230,7 +230,10 @@ export default {
     },
     submitAll() {
         console.log('表单提交!');
-        this.$emit('submit',{});
+        this.$emit('submit',{
+            mobileNumber: this.telephone,
+            typeOfService: this.selectedTypes,
+        });
         // 首先再次检查，防止意外情况
         if (!this.isFormValid) {
             console.log('表单无效，无法提交');

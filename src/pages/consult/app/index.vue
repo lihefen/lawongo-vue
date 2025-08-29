@@ -8,20 +8,26 @@
 -->
 <template>
   <div class="main">
-        <!-- <div class="step">
+        <div class="step">
             <div class="stepItem active">
                 <span>1</span>
                 Questions
+            </div>
+            <div class="stepArrowWrap">
+                <div class="stepArrow"></div>
             </div>
             <div class="stepItem">
                 <span>2</span>
                 Match
             </div>
+            <div class="stepArrowWrap">
+                <div class="stepArrow"></div>
+            </div>
             <div class="stepItem">
                 <span>3</span>
                 Consultation
             </div>
-        </div> -->
+        </div>
         <div class="dataWrap">
             <div class="dataContent">
                 <div class="dataItem">

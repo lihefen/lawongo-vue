@@ -12,6 +12,16 @@
     margin-top: 40px;
     height: 80px;
     border-bottom: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    padding: 0 40px;
+    > div {
+        flex: 1;
+    }
+    .stepArrowWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .stepItem {
         display: flex;
         align-items: center;
@@ -26,6 +36,7 @@
             background: #C0C0C0;
             color: #fff;
             font-size: 20px;
+            margin-right: 4px;
     
         }
         &.active {
@@ -34,6 +45,13 @@
                 background: #069456;
             }
         }
+    }
+    .stepArrow {
+        width: 20px;
+        height: 14px;
+        background: url(./images/step_arrow.png) no-repeat center center;
+        background-size: 100% 100%;
+        box-sizing: border-box;
     }
    
 }
