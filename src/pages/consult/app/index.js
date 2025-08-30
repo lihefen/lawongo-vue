@@ -14,13 +14,20 @@ export default {
             },
             swiperOptionConsult:{
                 slidesPerView: "auto",
-                spaceBetween: 10,
-            }
+                spaceBetween: 8,
+            },
+            message: '',
+            userMessage: [],
+            lawyerMessage: [],
+            messageList:[]
         };
     },
     methods: {
         consultHandle(id){
            window.location.href = `lawongo://lawyerPayOneActivity?chatType=1&lawyerId=${id}`;
+        },
+        sendMessage() {
+            console.log('sendMessage');
         }
     }
 };

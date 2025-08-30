@@ -179,6 +179,7 @@
                     </div>
                     <div class="position"><span></span>Peradi</div>
                 </div>
+                
                 <Swiper class="consultSwiper" :options="swiperOptionConsult">
                     <SwiperSlide>
                         <div class="swiperItem">
@@ -269,32 +270,45 @@
                 </Swiper>
             </div>
         </div>
-        <div class="commentWrap">
-            <div class="commentList">
-                <div class="textContent">
-                    TextsTextsTextsTextsTextsTextsTexts
-                    TextsTextsTextsTextsTextsTextsTexts
-                    TextsTextsTextsTextsTextsTextsTexts
+        <div v-for="(item, index) in messageList" :key="index + 989">
+            <div class="commentWrap">
+                <div class="commentList">
+                    <div class="textContent">
+                        TextsTextsTextsTextsTextsTextsTexts
+                        TextsTextsTextsTextsTextsTextsTexts
+                        TextsTextsTextsTextsTextsTextsTexts
+                    </div>
+                    <div class="avatar"></div>
                 </div>
-                <div class="avatar"></div>
             </div>
-        </div>
 
-        <div class="lawyerWrap">
-            <div class="lawyerList">
-                <div class="avatar1"></div>
-                <div class="textContent">
-                    TextsTextsTextsTextsTextsTextsTexts
-                    TextsTextsTextsTextsTextsTextsTexts
-                    TextsTextsTextsTextsTextsTextsTexts
+            <div class="lawyerWrap">
+                <div class="lawyerList">
+                    <div class="avatar1"></div>
+                    <div class="textContent">
+                        TextsTextsTextsTextsTextsTextsTexts
+                        TextsTextsTextsTextsTextsTextsTexts
+                        TextsTextsTextsTextsTextsTextsTexts
+                    </div>
                 </div>
             </div>
         </div>
         
+        
         <div class="askInputWrap">
             <div class="askInput">
-                <input class="askInputText" type="text" placeholder="Send message...">
-                <a href="javascript:;" class="askInputBtn">
+                <!-- <input class="askInputText" type="text" placeholder="Send message..." >
+                -->
+                <van-field
+                v-model="message"
+                rows="1"
+                autosize
+                type="textarea"
+                placeholder="Send message..."
+                />
+                <a href="javascript:;"
+                @click="sendMessage"
+                class="askInputBtn" :class="message ? 'active' : ''" >
                 </a>
             </div>
         </div>

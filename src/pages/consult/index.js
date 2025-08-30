@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { Button, Cell, NavBar, CellGroup, Toast,Collapse, CollapseItem,Checkbox,Popup  } from 'vant';
+import { Button, Cell, NavBar, CellGroup, Toast,Collapse, CollapseItem,Checkbox,Popup,  Field } from 'vant';
 
 import 'vant/lib/index.css';
 import App from './app/index.vue';
@@ -14,6 +14,8 @@ Vue.use(Collapse);
 Vue.use(CollapseItem);
 Vue.use(Checkbox);
 Vue.use(Popup);
+Vue.use(Field);
+
 /**
  * 初始化Vue实例
  * @description 挂载路由配置和根组件

@@ -362,7 +362,7 @@
     margin-top: 40px;
     height: 520px;
     box-sizing: border-box;
-    padding: 30px 0px 0 20px;
+    padding: 30px 0 0 0;
     border-radius: 20px;
     background: linear-gradient(
         180deg,
@@ -372,6 +372,9 @@
     .consultTop {
         display: flex;
         align-items: flex-end;
+        box-sizing: border-box;
+        padding-right: 28px;
+        padding-left: 24px;
         .consultTitle {
             font-size: 24px;
             color: #fff;
@@ -474,14 +477,13 @@
 
 .consultSwiper {
     margin-top: 20px;
+    padding-left: 18px;
     .swiper-slide {
-        width: 316px;
-    }
-    .swiperItem {
+        width: 314px;
     }
     .content {
         position: relative;
-        width: 316px;
+        width: 314px;
         height: 382px;
         background: #F6F7F9;
         border:1px solid #E0EFE5;
@@ -607,13 +609,26 @@
             background: url(./images/map_icon.png) no-repeat center center;
             background-size: 100% 100%;
             margin-left: 20px;
+            &.active {
+                background: url(./images/send_icon.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
         }
+    }
+}
+
+::v-deep {
+    .van-field {
+        width: 520px;
+        border-radius: 80px;
+        border: 1px solid rgba(0,0,0,.2);
     }
 }
 
 .commentWrap {
     box-sizing: border-box;
     padding: 0 30px;
+    margin-top: 60px;
 }
 .commentList {
     display: flex;
