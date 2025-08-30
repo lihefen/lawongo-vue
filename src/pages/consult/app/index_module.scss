@@ -55,6 +55,54 @@
     }
    
 }
+.timeWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #fef7f1;
+    box-sizing: border-box;
+    padding: 18px 30px 18px 48px;
+    .text {
+        font-size: 28px;
+        color: #F67003;
+    }
+    .time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 124px;
+        height: 48px;
+        background: rgba(255, 139, 31, 1);
+        border-radius: 12px;
+        font-size: 24px;
+        color: #fff;
+        .timeIcon {
+            width: 24px;
+            height: 24px;
+            background: url(./images/time_icon.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-right: 4px;
+        }
+    }
+
+}
+.personWrap {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin-top: 30px;
+    .personContent {
+        position: relative;
+        width: 100%;
+        height: 256px;
+        border: 0.5px solid rgba(224, 239, 229, 1);
+        border-radius: 20px;
+        background: linear-gradient(181.07deg, rgba(91, 237, 164, 0.28),rgba(231, 247, 239, 0.21) 99%);
+        box-sizing: border-box;
+    }
+    // opacity: 0.84;
+
+}
 .dataWrap {
     position: relative;
     width: 690px;
@@ -79,7 +127,7 @@
     }
     .dataNum {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         font-size: 40px;
         font-family: DINAlternate-Bold, DINAlternate, PingFangSC-Regular, PingFang SC;
@@ -507,17 +555,25 @@
             }
             .photoImg1 {
                 position: absolute;
-                width: 200px;
-                height: 178px;
+                width: 176px;
+                height: 180px;
                 background: url(./images/consult_photo_1.png) no-repeat center center;
                 background-size: 100% 100%;
                 
             }
             .photoImg2 {
                 position: absolute;
-                width: 200px;
-                height: 178px;
+                width: 176px;
+                height: 180px;
                 background: url(./images/consult_photo_2.png) no-repeat center center;
+                background-size: 100% 100%;
+                
+            }
+            .photoImg3 {
+                position: absolute;
+                width: 176px;
+                height: 180px;
+                background: url(./images/consult_photo_3.png) no-repeat center center;
                 background-size: 100% 100%;
                 
             }
@@ -677,10 +733,10 @@
         border-bottom-right-radius: 30px;
         padding: 20px;
         font-size: 24px;
-        color: #000;
         font-weight: bold;
         box-sizing: border-box;
         word-break: break-all;
         line-height: 1.5;
+        color: #000;
     }
 }

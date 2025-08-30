@@ -28,10 +28,18 @@
                 Consultation
             </div>
         </div>
+        <div class="timeWrap">
+            <div class="text">You have 40 minutes to consult with a lawyer.</div>
+            <div class="time"><div class="timeIcon"></div>20:20</div>
+        </div>
+        <div class="personWrap">
+            <div class="personContent">
+            </div>
+        </div>
         <div class="dataWrap">
             <div class="dataContent">
                 <div class="dataItem">
-                    <div class="dataNum">800<span>+</span></div>
+                    <div class="dataNum">8000<span>+</span></div>
                     <div class="dataText">Consultants</div>
                 </div>
                 <div class="dataItem">
@@ -62,77 +70,19 @@
         </div>
         <div class="lawerList">
             <Swiper class="lawerSwiper" :options="swiperOptionLawer">
-                <SwiperSlide>
+                <SwiperSlide v-for="(item, index) in lawyerList" :key="index + 189">
                     <div class="swiperItem">
                         <div class="content">
                             <div class="photo">
-                                <div class="photoImg photoImg1"></div>
+                                <div class="photoImg" :class="`photoImg${index + 1}`"></div>
                                 <div class="logo"></div>
                             </div>
                             <div class="info">
                                 <div class="name">
-                                    <div class="nameText">Lawyer Riza</div>
+                                    <div class="nameText">{{ item.name }}</div>
                                     <div class="star"><span></span>4.8</div></div>
                                 <div class="experience">
-                                    <span class="year">3 years</span>
-                                    <span class="order">80 Consultants</span>
-                                </div>
-                                <div class="tagList">
-                                    <div class="tagItem">
-                                        <span class="tag">Family Wedding</span>
-                                    </div>
-                                    <div class="tagItem">
-                                        <span class="tag">Criminal cases</span>
-                                    </div>
-                                </div>
-                               
-                               
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="content">
-                            <div class="photo">
-                                <div class="photoImg photoImg2"></div>
-                                <div class="logo"></div>
-                            </div>
-                            <div class="info">
-                                <div class="name">
-                                    <div class="nameText">Lawyer Riza</div>
-                                    <div class="star"><span></span>4.8</div></div>
-                                <div class="experience">
-                                    <span class="year">3 years</span>
-                                    <span class="order">80 Consultants</span>
-                                </div>
-                                <div class="tagList">
-                                    <div class="tagItem">
-                                        <span class="tag">Family Wedding</span>
-                                    </div>
-                                    <div class="tagItem">
-                                        <span class="tag">Criminal cases</span>
-                                    </div>
-                                </div>
-                               
-                               
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="content">
-                            <div class="photo">
-                                <div class="photoImg photoImg3"></div>
-                                <div class="logo"></div>
-                            </div>
-                            <div class="info">
-                                <div class="name">
-                                    <div class="nameText">Lawyer Riza</div>
-                                    <div class="star"><span></span>4.8</div></div>
-                                <div class="experience">
-                                    <span class="year">3 years</span>
+                                    <span class="year">{{ item.year }} years</span>
                                     <span class="order">80 Consultants</span>
                                 </div>
                                 <div class="tagList">
@@ -179,17 +129,17 @@
                     </div>
                     <div class="position"><span></span>Peradi</div>
                 </div>
-                
+
                 <Swiper class="consultSwiper" :options="swiperOptionConsult">
-                    <SwiperSlide>
+                    <SwiperSlide v-for="(item, index) in consultList" :key="index + 389">
                         <div class="swiperItem">
                             <div class="content">
                                 <div class="photo">
-                                    <div class="photoImg photoImg1"></div>
+                                    <div class="photoImg" :class="`photoImg${index + 1}`"></div>
                                     <div class="logo"></div>
                                     <div class="topInfo">
                                         <div class="star"><span></span>4.8</div>
-                                        <div class="name">Lawyer Riza</div>
+                                        <div class="name">{{ item.name }}</div>
                                         <div class="tahun">
                                             30 tahun
                                         </div>
@@ -209,86 +159,23 @@
                             </div>
                         </div>
                     </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div class="swiperItem">
-                            <div class="content">
-                                <div class="photo">
-                                    <div class="photoImg photoImg2"></div>
-                                    <div class="logo"></div>
-                                    <div class="topInfo">
-                                        <div class="star"><span></span>4.8</div>
-                                        <div class="name">Lawyer Riza</div>
-                                        <div class="tahun">
-                                            30 tahun
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="infoItem">
-                                        <div class="sec"><span>18</span> sec.</div>
-                                        <div class="secText">Response <br/>Speed</div>
-                                    </div>
-                                    <div class="infoItem">
-                                        <div class="case"><span>9939</span> products</div>
-                                        <div class="caseText">Resolved <br/>cases</div>
-                                    </div>
-                                </div>
-                                <div class="rp">Rp100<a href="javascript:;" @click="consultHandle('4')" class="consultBtn">Consult</a></div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div class="swiperItem">
-                            <div class="content">
-                                <div class="photo">
-                                    <div class="photoImg photoImg2"></div>
-                                    <div class="logo"></div>
-                                    <div class="topInfo">
-                                        <div class="star"><span></span>4.8</div>
-                                        <div class="name">Lawyer Riza</div>
-                                        <div class="tahun">
-                                            30 tahun
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="infoItem">
-                                        <div class="sec"><span>18</span> sec.</div>
-                                        <div class="secText">Response <br/>Speed</div>
-                                    </div>
-                                    <div class="infoItem">
-                                        <div class="case"><span>9939</span> products</div>
-                                        <div class="caseText">Resolved <br/>cases</div>
-                                    </div>
-                                </div>
-                                <div class="rp">Rp100<a href="javascript:;"  @click="consultHandle(5)"  class="consultBtn">Consult</a></div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
                 </Swiper>
             </div>
         </div>
         <div v-for="(item, index) in messageList" :key="index + 989">
-            <div class="commentWrap">
+            <div class="commentWrap" v-if="item.type == 'user'">
                 <div class="commentList">
                     <div class="textContent">
-                        TextsTextsTextsTextsTextsTextsTexts
-                        TextsTextsTextsTextsTextsTextsTexts
-                        TextsTextsTextsTextsTextsTextsTexts
+                        {{ item.text }}
                     </div>
                     <div class="avatar"></div>
                 </div>
             </div>
 
-            <div class="lawyerWrap">
+            <div class="lawyerWrap" v-if="item.type == 'lawyer'">
                 <div class="lawyerList">
                     <div class="avatar1"></div>
-                    <div class="textContent">
-                        TextsTextsTextsTextsTextsTextsTexts
-                        TextsTextsTextsTextsTextsTextsTexts
-                        TextsTextsTextsTextsTextsTextsTexts
+                    <div class="textContent" v-html="item.text">
                     </div>
                 </div>
             </div>
