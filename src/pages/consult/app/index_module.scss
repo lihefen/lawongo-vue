@@ -362,7 +362,7 @@
     margin-top: 40px;
     height: 520px;
     box-sizing: border-box;
-    padding: 30px 30px 0;
+    padding: 30px 0px 0 20px;
     border-radius: 20px;
     background: linear-gradient(
         180deg,
@@ -447,7 +447,7 @@
         border-radius: 60px;
         font-size: 28px;
         color: #069456;
-        margin: 40px auto 0;
+        margin: 20px auto 0;
         box-sizing: border-box;
         padding-left: 20px;
     }
@@ -491,17 +491,20 @@
         overflow: hidden;
         .photo {
             position: relative;
-            height: 160px;
+            height: 190px;
             background: linear-gradient(
                 180deg,
                 #FFFFFF 24%,
                 #A6F8D4 100%
             ); 
             overflow: hidden;
+            .photoImg {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
             .photoImg1 {
                 position: absolute;
-                right: 0;
-                left: 0;
                 width: 200px;
                 height: 178px;
                 background: url(./images/consult_photo_1.png) no-repeat center center;
@@ -510,8 +513,6 @@
             }
             .photoImg2 {
                 position: absolute;
-                right: 0;
-                left: 0;
                 width: 200px;
                 height: 178px;
                 background: url(./images/consult_photo_2.png) no-repeat center center;
@@ -530,11 +531,16 @@
         }
     }
     .topInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         position: absolute;
         right: 0;
         top: 0; 
         box-sizing: border-box;
-        padding-right: 20px;
+        padding-right: 6px;
+        padding-top: 20px;
+
         .star {
             display: flex;
             align-items: center;
@@ -553,6 +559,7 @@
             font-size: 28px;
             color: #000;
             font-weight: bold;
+            margin-top: 10px;
         }
         .tahun {
             display: flex;
@@ -568,6 +575,7 @@
                 #0BB66B 0%,
                 #0AE686 100%
             ); 
+            margin-top: 14px;
         }
     }
 }
