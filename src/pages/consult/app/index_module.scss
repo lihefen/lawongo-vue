@@ -602,3 +602,62 @@
         }
     }
 }
+
+.commentWrap {
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.commentList {
+    display: flex;
+    justify-content: flex-end;
+    .avatar {
+        width: 60px;
+        height: 60px;
+        background: url(./images/person.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .textContent {
+        width: 452px;
+        background: rgba(6, 148, 86, 1);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 20px;
+        font-size: 24px;
+        color: #fff;
+        margin-right: 12px;
+        font-weight: bold;
+        box-sizing: border-box;
+        word-break: break-all;
+        line-height: 1.5;
+    }
+}
+.lawyerWrap {
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin-top: 60px;
+}
+.lawyerList {
+    display: flex;
+    .avatar1 {
+        width: 60px;
+        height: 60px;
+        background: url(./images/lawer_avatar_1.png) no-repeat center center;
+        background-size: 100% 100%;
+        margin-right: 12px;
+    }
+    .textContent {
+        width: 452px;
+        background: rgba(246, 247, 249, 1);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 20px;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+        box-sizing: border-box;
+        word-break: break-all;
+        line-height: 1.5;
+    }
+}
