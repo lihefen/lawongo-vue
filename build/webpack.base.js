@@ -56,7 +56,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name]/js/[name].[contenthash:8].js', // 按页面名分组
-    publicPath: '/h5/',
+    // publicPath: '/h5/',
+    publicPath: '/',
     clean: true, // Clean the output directory before emit.
   },
   resolve: {
