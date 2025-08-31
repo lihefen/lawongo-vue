@@ -30,7 +30,7 @@
         </div>
         <div class="timeWrap">
             <div class="text">You have 40 minutes to consult with a lawyer.</div>
-            <div class="time"><div class="timeIcon"></div>20:20</div>
+            <div class="time"><div class="timeIcon"></div><van-count-down  format="mm:ss" :time="time" @finish="finish" /></div>
         </div>
         <div class="personWrap">
             <div class="personContent">

@@ -8,6 +8,7 @@ export default {
     name: 'consult',
     data() {
         return {
+            time: 3000000,
             swiperOptionLawer:{
                 slidesPerView: "auto",
                 spaceBetween: 10,
@@ -81,5 +82,8 @@ export default {
         scrollToBottom:function(){
             window.scrollTo(0, document.body.scrollHeight);
         },
+        finish() {
+            //
+        }
     }
 };
