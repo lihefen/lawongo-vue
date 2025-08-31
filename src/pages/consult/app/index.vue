@@ -34,7 +34,25 @@
         </div>
         <div class="personWrap">
             <div class="personContent">
+                <div class="personInfo">
+                    <div class="name">Riza zafita rizki</div>
+                    <div class="tagWrap">
+                        <span class="tag">Currently Online</span>
+                        <span class="tag">1V1 Service</span>
+                        <span class="tag">Currently Online</span>
+                    </div>
+                    <div class="other">
+                        <div class="yearWrap"><span class="yarIcon"></span>Served: 7 years </div>
+                        <div class="faceWrap"><span class="faceIcon"></span>4.8<span class="starIcon"></span></div>
+                    </div>
+
+                </div>
+                <div class="logo"></div>
+                <div class="avatar avatar1"></div>
+                
             </div>
+           
+           
         </div>
         <div class="dataWrap">
             <div class="dataContent">
@@ -181,7 +199,28 @@
             </div>
         </div>
         
+        <div class="overText">— The consultation is over —</div>
+
+        <div class="evaluationText">Overall Service Evaluation</div>
         
+        <div class="evaluationWrap">
+            <div class="evaluationList">
+                <a href="javascript:;" class="evaluationBtn evaluationIcon1"></a>
+                <a href="javascript:;" class="evaluationBtn evaluationIcon2"></a>
+                <a href="javascript:;" class="evaluationBtn evaluationIcon3"></a>
+                <a href="javascript:;" class="evaluationBtn evaluationIcon4"></a>
+                <a href="javascript:;" class="evaluationBtn evaluationIcon5"></a>
+            </div>
+            <div class="evaluationTypeTitle">Select Project Type</div>
+            <div class="evaluationTypeList">
+                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Contract disputes</a>
+                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Family Wedding</a>
+            </div>
+            <div class="evaluationTypeList">
+                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Property Disputes</a>
+                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Labor Disputes</a>
+            </div>
+        </div>
         <div class="askInputWrap">
             <div class="askInput">
                 <!-- <input class="askInputText" type="text" placeholder="Send message..." >

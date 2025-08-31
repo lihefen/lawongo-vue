@@ -97,8 +97,102 @@
         height: 256px;
         border: 0.5px solid rgba(224, 239, 229, 1);
         border-radius: 20px;
-        background: linear-gradient(181.07deg, rgba(91, 237, 164, 0.28),rgba(231, 247, 239, 0.21) 99%);
+        // background: linear-gradient(181.07deg, rgba(91, 237, 164, 0.28),rgba(231, 247, 239, 0.21) 99%);
+        border-radius: 10px;
+        background: linear-gradient(181.07deg, rgba(91, 237, 164, 0.24),rgba(231, 247, 239, 0.16) 99%);
+
+
         box-sizing: border-box;
+        overflow: hidden;
+    }
+    .personInfo {
+        padding-left: 32px;
+        padding-top: 34px;
+        .name {
+            font-size: 36px;
+            color: #000;
+            font-weight: bold;
+        }
+        .tagWrap {
+            padding-top: 20px;
+            font-size: 0;
+            width: 400px;
+            box-sizing: border-box;
+            .tag {
+                display: inline-block;
+                padding: 8px;
+                font-size: 22px;
+                color: rgba(0, 135, 76, 1);
+                border-radius: 8px;
+                margin-right: 8px;
+                margin-top: 8px;
+                // background: linear-gradient(
+                //     00deg,
+                //     rgba(198, 255, 255, .93) 0%,
+                //     rgba(226, 255, 241, 1) 100%
+                // ); 
+                background: #c6fddf;
+            }
+        }
+        .other {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            .yearWrap {
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                color: rgba(0,0,0,.5);
+                margin-right: 20px;
+            }
+            .faceWrap {
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                color: rgba(0,0,0,.5);
+            }
+            .yarIcon {
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                background: url(./images/year_icon.png) no-repeat center center;
+                background-size: 100% 100%;
+                margin-right: 4px;
+            }
+            .faceIcon {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(./images/haoping_icon.png) no-repeat center center;
+                background-size: 100% 100%;
+                margin-right: 4px;
+            }
+            .starIcon {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(./images/star_icon.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .avatar1 {
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+        width: 240px;
+        height: 232px;
+        background: url(./images/person_1.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .logo {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 186px;
+        height: 150px;
+        background: url(./images/person_logo.png) no-repeat center center;
+        background-size: 100% 100%;
     }
     // opacity: 0.84;
 
@@ -636,6 +730,95 @@
             margin-top: 14px;
         }
     }
+}
+
+.overText {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(153, 153, 153, 1);
+    margin-top: 60px;
+}
+.evaluationText {
+    text-align: center;
+    font-size: 32px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: bold;
+    margin-top: 60px;
+}
+.evaluationWrap {
+    .evaluationList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        .evaluationBtn {
+            margin-left: 48px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        .evaluationIcon1 {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/evaluation_icon_1.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .evaluationIcon2 {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/evaluation_icon_2.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .evaluationIcon3 {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/evaluation_icon_3.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .evaluationIcon4 {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/evaluation_icon_4.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .evaluationIcon5 {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: url(./images/evaluation_icon_5.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+    .evaluationTypeTitle {
+        text-align: center;
+        color: rgba(51, 51, 51, 1);
+        font-size: 32px;
+        padding-top: 40px;
+    }
+    .evaluationTypeList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .evaluationTypeBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 252px;
+            border-radius: 100px;
+            height: 48px;
+            background: rgba(241, 241, 241, 1);
+            font-size: 24px;
+            color: rgba(102, 102, 102, 1);
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+    }
+    
+    
 }
 .askInputWrap {
     position: fixed;
