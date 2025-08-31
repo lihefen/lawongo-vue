@@ -820,6 +820,35 @@
     
     
 }
+.continueBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    width: 670px;
+    height: 110px;
+    font-weight: bold;
+    border-radius: 126px;
+    background: rgba(6, 148, 86, 1);
+    margin: 48px auto 0;
+    box-sizing: border-box;
+}
+.chooseBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(6, 148, 86, 1);
+    font-size: 32px;
+    width: 670px;
+    height: 110px;
+    font-weight: bold;
+    border-radius: 126px;
+    background: #fff;
+    border: 2px solid rgba(6, 148, 86, 1);
+    margin: 24px auto 0;
+    box-sizing: border-box;
+}
 .askInputWrap {
     position: fixed;
     bottom: 0;

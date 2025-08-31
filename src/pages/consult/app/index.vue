@@ -221,6 +221,12 @@
                 <a href="javascript:;" class="evaluationType evaluationTypeBtn">Labor Disputes</a>
             </div>
         </div>
+
+        <a href="javascript:;" class="continueBtn">Continue with Lawyer</a>
+
+        <a href="javascript:;" class="chooseBtn">Choose another lawyer</a>
+
+
         <div class="askInputWrap">
             <div class="askInput">
                 <!-- <input class="askInputText" type="text" placeholder="Send message..." >
