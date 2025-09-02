@@ -120,10 +120,9 @@
             </Swiper>
         </div>
 
-        <div class="guardBar">
+        <div class="guardBar" @click="guardHandle">
             <div class="guardIcon"></div>
-            <div class="guardText">Guardian mode enabled</div>
-            <a href="javascript:;" class="arrow"></a>
+            <div class="guardText" :class="!showGuard ? 'guardLeft' : ''">Guardian mode enabled  <span class="arrow"></span></div>
         </div>
 
         <div class="askInfo">

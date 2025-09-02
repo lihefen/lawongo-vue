@@ -429,29 +429,46 @@
     justify-content: center;
     margin-top: 40px;
     width: 396px;
-    background: #EBF7FA;
     font-size: 24px;
     color: #000;
-    height: 56px;
-    border-radius: 56px;
     margin-left: 30px;
     .guardIcon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
         width: 64px;
         height: 64px;
         background: url(./images/guard_icon.png) no-repeat center center;
         background-size: 100% 100%;
+        z-index: 1;
     }
     .guardText {
+        display: flex;
+        position: relative;
+        align-items: center;
         flex: 1;
-        text-align: center;
+        text-align: left;
+        box-sizing: border-box;
+        padding-left: 20px;
+        background: #EBF7FA;
+        height: 56px;
+        border-radius: 56px;
+        width: 396px;
+        padding-left: 80px;
+        &.guardLeft {
+            left: -1000px;
+        }
     }
     .arrow {
-        display: inline-block;
+        position: absolute;
         width: 14px;
         height: 14px;
         background: url(./images/arrow.png) no-repeat center center;
         background-size: 100% 100%;
-        margin-right: 20px;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 

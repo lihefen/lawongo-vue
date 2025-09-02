@@ -54,7 +54,8 @@ export default {
                 //     type: 'lawyer',
                 //     text: 'Hello, what question do you want to ask?',
                 // }
-            ]
+            ],
+            showGuard:true
         };
     },
     methods: {
@@ -84,6 +85,11 @@ export default {
         },
         finish() {
             //
+        },
+        guardHandle() {
+            //
+            this.showGuard = !this.showGuard;
         }
+        
     }
 };
