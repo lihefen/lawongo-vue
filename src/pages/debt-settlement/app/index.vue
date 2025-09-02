@@ -142,8 +142,8 @@
         <div class="tips">Let us consult for you, reduce your debt and start your life again.</div>
         <div class="btnContent">
             <div class="btns">
-                <a href="javascript:;" class="btn1">Free Evaluation</a>
-                <a href="javascript:;" class="btn2">Apply Now</a>
+                <a  href="lawongo://aiActivity" class="btn1">Free Evaluation</a>
+                <a href="lawongo://aiActivity" class="btn2">Apply Now</a>
             </div>
             <div class="text">Ensure your payment security</div>
         </div>

@@ -42,7 +42,7 @@
                         <span class="tag">Currently Online</span>
                     </div>
                     <div class="other">
-                        <div class="yearWrap"><span class="yarIcon"></span>Served: 7 years </div>
+                        <div class="yearWrap"><span class="yarIcon"></span>Served: 8 years </div>
                         <div class="faceWrap"><span class="faceIcon"></span>4.8<span class="starIcon"></span></div>
                     </div>
 
@@ -58,15 +58,15 @@
             <div class="dataContent">
                 <div class="dataItem">
                     <div class="dataNum">8000<span>+</span></div>
-                    <div class="dataText">Consultants</div>
+                    <div class="dataText">Suceess stories</div>
                 </div>
                 <div class="dataItem">
                     <div class="dataNum">50<span>+</span></div>
-                    <div class="dataText">Lawyers</div>
+                    <div class="dataText">Registered Lawyers</div>
                 </div>
                 <div class="dataItem">
                     <div class="dataNum"><span class="star"></span>4.9<span>/5.0</span></div>
-                    <div class="dataText">Assessment</div>
+                    <div class="dataText">Excellent rating</div>
                 </div>
             </div>
         </div>
@@ -226,6 +226,12 @@
 
         <a href="javascript:;" class="chooseBtn">Choose another lawyer</a>
 
+        <div class="legalWrap">
+            <div class="legalMain">
+
+            </div>
+            
+        </div>
 
         <div class="askInputWrap">
             <div class="askInput">

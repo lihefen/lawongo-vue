@@ -137,7 +137,7 @@
     <div class="btmBtnGroup">
         <div class="tips">You are just one click away with professional legal support!</div>
         <div class="btnContent">
-            <a href="javascript:;" class="btn">Contact Now</a>
+            <a  href="lawongo://aiActivity" class="btn">Contact Now</a>
             <div class="text">Ensure your payment security</div>
         </div>
     </div>

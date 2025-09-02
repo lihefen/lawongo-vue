@@ -185,7 +185,7 @@ export default {
       const phone = this.telephone;
       if (phone) {
         // 使用 slice 截取前3位和后4位
-        return `${phone.slice(0, 3)}****${phone.slice(-4)}`;
+        // return `${phone.slice(0, 3)}****${phone.slice(-4)}`;
       }
       
       // 如果不符合规则（例如为空或长度不对），直接返回原样
