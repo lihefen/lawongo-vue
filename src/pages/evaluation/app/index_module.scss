@@ -553,3 +553,7 @@
 ::v-deep .van-popup {
     background: none;
 }
+
+::v-deep .van-cell__title {
+    font-weight: bold;
+}

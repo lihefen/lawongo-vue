@@ -42,14 +42,53 @@ export default {
             showeValuation:false,
             mobileVal: '',
             codeVal: '',
+            faqList: [
+                
+                {
+                    title: 'How can LOG help to reduce your debt burden?',
+                    content: 'LOG provides debt mediation, consolidation, relief, and credit advisory services. Our professional solutions help clients reduce financial pressure and rebuild strong credit.'
+                },
+                {
+                    title: 'How to start consultation?',
+                    content: `Simply click the 'Add Debt Information' button on the homepage to submit your basic debt details. Our specialist will reach out to you via phone or WhatsApp within 24 business hours. We appreciate your patience.`
+                },
+                {
+                    title: 'How much will LOG service charge?',
+                    content: `LOG offers highly affordable consulting services with a two-part fee structure: consultation fee and success fee. The consultation fee is charged upfront before LOG initiates mediation services, while the success fee is only collected after the successful mediation. Our consultation fee is just Rp50,000 per 40-minute session`
+                },
+                {
+                    title: 'How long will it take to get the results after the consultation?',
+                    content: `For your initial consultation, LOG will contact you within one business day to thoroughly understand and analyze your debt situation. The duration of the mediation process will depend on the complexity of your debts. Please rest assured that LOG will make every effort to provide you with the highest quality service`
+                },
+                {
+                    title: 'Is my private information at risk of leaking?',
+                    content: `At LOG, we place the highest priority on user data security. The following stringent measures ensure your private information remains absolutely protected with zero risk of leakage:<br/>
+                    1.All user data is stored using AES-256 encryption technology,the same standard employed by financial institutions.<br/>
+                    2.Principle of Minimal Access:Only licensed lawyers/mediators who have passed thorough background checks may access information
+                    Your Privacy is Guaranteed：Your disclosed debt details will never be used for any other purposes and all information remains protected under strict confidentiality protocols`
+                }
+            ],
         };
     },
     methods: {
         async sendCode() {
             await sendCode({
-                mobile: this.mobileVal,
+                data:{
+                    mobile: this.mobileVal,
+                },
+                env: 'proxyDev',
+               
+
             }).then(res => {
                 console.log(res);
+            });
+        },
+        async loginCode() {
+            await loginCode({
+                data:{
+                    mobile: this.mobileVal,
+                    code: this.codeVal,
+                },
             });
         }
     }

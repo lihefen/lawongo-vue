@@ -19,7 +19,7 @@
 
             <div class="input sendInput">
                 <input type="text" v-model="codeVal" placeholder="Verification Code"></input>
-                <a href="javascript:;" class="sendBtn">send</a>
+                <a href="javascript:;" class="sendBtn" @click="sendCode">send</a>
             </div>
             <div class="privacy">
                 <van-checkbox v-model="checked"></van-checkbox>
@@ -219,15 +219,10 @@
         <div class="title6"></div>
         <div class="fagMain">
             <van-collapse v-model="activeNames">
-                <van-collapse-item title="Is this service free" name="1">
-                    Apakah Layanan Ini Gratis
+                <van-collapse-item :title="item.title" name="1" v-for="(item,index) in faqList" :key="index + 88787">
+                   <div v-html="item.content"></div>
                 </van-collapse-item>
-                <van-collapse-item title="How soon will I be contacted?" name="2">
-                    Berapa Lama Saya akan di Hubungi
-                </van-collapse-item>
-                <van-collapse-item title="Will my personal data be leaked？" name="3">
-                    Apakah Data Saya Terlindungi?
-                </van-collapse-item>
+             
             </van-collapse>
         </div>
 

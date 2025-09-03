@@ -20,13 +20,13 @@ export default {
     name: 'HomeApp',
     methods: {
         submit(data) {
-            this.officialInfo();
-            console.log('表单提交成功:', data);
+            
             this.data = {
                 ...this.data,
                 mobileNumber:data.mobileNumber || '',
                 typeOfService:data.typeOfService || ''
             }
+            this.officialInfo();
         },
         async officialInfo() {
             console.log('this.data',this.data);
@@ -35,7 +35,7 @@ export default {
                     "type": "app", 
                     "mobileNumber": this.data.mobileNumber,
                     "legalServices": '', 
-                    "typeOfService": this.data.typeOfService,
+                    "typeOfService": this.data.typeOfService.join(','),
                     "businessField": '',
                     "detailOfRequired": ''
                 },

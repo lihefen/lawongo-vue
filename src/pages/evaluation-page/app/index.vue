@@ -9,25 +9,20 @@
 <template>
   <div class="main">
         <div class="step">
-            <div class="bar"></div>
+            <div class="bar" :style="{width: (activeIndex + 1) * 20 + '%'}"></div>
         </div>
-        <div class="stepText">1/5</div>
+        <div class="stepText">{{activeIndex + 1 }}/5</div>
         <div class="title">
-            <span class="tag">1</span>What is your approximate total debt amount?
+            <span class="tag">{{ activeIndex + 1 }}</span>{{questionList[activeIndex].title }}
         </div>
         <div class="content">
-            <a href="javascript:;" class="item">
-                A.Less than Rp 10 million
+            <a href="javascript:;"  class="item" :class="{'active': Number(currentNum) === index}" @click="selectOption(index)" v-for="(item,index) in questionList[activeIndex].options" :key="index + 88787">
+               {{ item }}
             </a>
-            <a href="javascript:;" class="item">
-                B. Rp 10‒50 juta
-            </a>
-            <a href="javascript:;" class="item">
-                C.More than Rp 50 million
-            </a>
+          
         </div>
-        <a href="javascript:;" class="backBtn"></a>
-        <a href="javascript:;" class="submitBtn"></a>
+        <a href="javascript:;" class="backBtn" v-if="activeIndex > 0" @click="back"></a>
+        <a href="javascript:;" class="submitBtn" @click="submit"></a>
 
         <div class="btmLogo"></div>
   </div>
