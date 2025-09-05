@@ -25,7 +25,7 @@
                 <van-checkbox v-model="checked"></van-checkbox>
                 I accept these <span>Terms of Use</span> and <span> Privacy Policy</span>
             </div>
-            <a href="javascript:;" class="suggestionsBtn"></a>
+            <a href="javascript:;" @click="loginCode" class="suggestionsBtn"></a>
         </div>
         <div class="title2"></div>
         <div class="teamMain">

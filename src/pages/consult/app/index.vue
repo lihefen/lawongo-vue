@@ -247,12 +247,12 @@
             </div>
             
         </div>
-        <div class="legalModalWrap">
+        <!-- <div class="legalModalWrap">
             <div class="legalModal">
                 <div>Legal Consulting 1 for 1</div>
                 <a href="javascript:;" class="consultNow">Consult Now</a>
             </div>
-        </div>
+        </div> -->
         
         <div class="askInputWrap">
             <div class="askInput">

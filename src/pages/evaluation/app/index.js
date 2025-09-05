@@ -1,5 +1,5 @@
 import CommonHeader from '@/components/CommonHeader.vue';
-import { navigateTo } from '@/utils';
+import { get } from 'lodash';
 import { sendCode } from 'services/sendCode';  
 import { loginCode } from 'services/loginCode';
 import { encryptDataWithRSA } from 'utils/encryptDataWithRSA.js';
@@ -84,12 +84,31 @@ export default {
             });
         },
         async loginCode() {
-            await loginCode({
-                data:{
-                    mobile: this.mobileVal,
-                    code: this.codeVal,
-                },
-            });
+           try {
+                const dataText = JSON.stringify({
+                    aesKey:'rMM+4uHIkgfbhk2qOqPxzw==',
+                    appName:'LawOnGo',
+                    channel:'io.lawongo.app',
+                    mobile:this.mobileVal,
+                    vcode: this.codeVal
+                });
+                const dataBody = encryptDataWithRSA(dataText,publicKey)
+                const res = await loginCode({
+                    data:dataBody,
+                    env: 'proxyDev',
+                });
+                const msg = get(res,'msg','');
+                const code = get(res,'code','-9999');
+                if(code != '00000' ) {
+                    Toast(msg)
+                }else {
+                    state.active = false;
+                    window.location.href = '/'
+                }
+           } catch (error) {
+                console.log(error)
+           }
+
         }
     }
 };

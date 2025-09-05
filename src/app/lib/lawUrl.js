@@ -25,12 +25,10 @@ export let domain = baseUrl[NodeEnv] || window.location.origin;
 /* eslint-disable */
 
 export const lawUrl = (url, { env } = {}) => {
-    console.log(`111`,env);
-    if (/proxy/.test(env)) {
+    if(NodeEnv == 'development') {
         return `/${env}${url}`;
+    }else {
+        return `https://lawongo.id/api${url}`;
     }
-    if (env) {
-        return `${baseUrl[env]}${url}`;
-    }
-    return `${domain}${url}`;
+  
 };
