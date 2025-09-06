@@ -125,6 +125,25 @@
             <div class="guardText" :class="!showGuard ? 'guardLeft' : ''">Guardian mode enabled  <span class="arrow"></span></div>
         </div>
 
+         <!-- 咨询进度加载 -->
+         <div class="loadingWrap" v-show="showLoading">
+            <div class="loadingContent">
+                <div class="risaPhoto"></div>
+                <div class="loadingMain">
+                    <div class="loadingTextTitle">Professional Lawyer <span>Accident</span>. It's...</div>
+                    <div class="loadingLineWrap">
+                        <div class="loadingLine">
+                            <div class="loadingInner"><span></span></div>
+                        </div>
+                        <span class="loadingTextNum">99%</span>
+                    </div>
+                    
+                    <div class="loadingTextText">Question has been published, waiting 00:01</div>
+                </div>
+               
+            </div>
+        </div>
+
         <div class="askInfo">
             <div class="askTop">
                 <div class="askTitle">Suppose you want to ask.</div>
@@ -138,7 +157,7 @@
                 <span class="askTag">Family Wedding</span>
            </div>
         </div>
-        <div class="consultListWrap">
+        <div class="consultListWrap" v-if="showLawyerList">
             <div class="consultList">
                 <div class="consultTop">
                     <div class="consultTitle">
@@ -201,23 +220,6 @@
         <div class="overText">— The consultation is over —</div>
 
         <div class="evaluationText">Overall Service Evaluation</div>
-        <div class="loadingWrap">
-            <div class="loadingContent">
-                <div class="risaPhoto"></div>
-                <div class="loadingMain">
-                    <div class="loadingTextTitle">Professional Lawyer <span>Accident</span>. It's...</div>
-                    <div class="loadingLineWrap">
-                        <div class="loadingLine">
-                            <div class="loadingInner"><span></span></div>
-                        </div>
-                        <span class="loadingTextNum">99%</span>
-                    </div>
-                    
-                    <div class="loadingTextText">Question has been published, waiting 00:01</div>
-                </div>
-               
-            </div>
-        </div>
         <div class="evaluationWrap">
             <div class="evaluationList">
                 <a href="javascript:;" class="evaluationBtn evaluationIcon1"></a>

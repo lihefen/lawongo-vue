@@ -9,6 +9,8 @@ export default {
     data() {
         return {
             time: 3000000,
+            showLoading:false,
+            showLawyerList:false,
             swiperOptionLawer:{
                 slidesPerView: "auto",
                 spaceBetween: 10,
@@ -78,6 +80,7 @@ export default {
             setTimeout(() => {
                 this.scrollToBottom();
             }, 400);
+            this.showLoading = true;
         },
         //滚动条滚动到底部
         scrollToBottom:function(){
