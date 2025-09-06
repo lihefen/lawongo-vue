@@ -20,7 +20,20 @@
     .stepArrowWrap {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;    
+        .stepArrow {
+            width: 20px;
+            height: 14px;
+            background: url(./images/step_arrow.png) no-repeat center center;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+        }
+        &.active {
+            .stepArrow {
+                background: url(./images/step_arrow_active.png) no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
     }
     .stepItem {
         display: flex;
@@ -46,13 +59,7 @@
             }
         }
     }
-    .stepArrow {
-        width: 20px;
-        height: 14px;
-        background: url(./images/step_arrow.png) no-repeat center center;
-        background-size: 100% 100%;
-        box-sizing: border-box;
-    }
+   
    
 }
 .timeWrap {

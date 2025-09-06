@@ -13,10 +13,10 @@
                 <span>1</span>
                 Questions
             </div>
-            <div class="stepArrowWrap">
+            <div class="stepArrowWrap" :class="Number(step) > 0 ? 'active' : ''">
                 <div class="stepArrow"></div>
             </div>
-            <div class="stepItem">
+            <div class="stepItem" :class="Number(step) > 0 ? 'active' : ''">
                 <span>2</span>
                 Match
             </div>
@@ -28,7 +28,7 @@
                 Consultation
             </div>
         </div>
-        <div class="timeWrap">
+        <!-- <div class="timeWrap">
             <div class="text">You have 40 minutes to consult with a lawyer.</div>
             <div class="time"><div class="timeIcon"></div><van-count-down  format="mm:ss" :time="time" @finish="finish" /></div>
         </div>
@@ -53,7 +53,7 @@
             </div>
            
            
-        </div>
+        </div> -->
         <div class="dataWrap">
             <div class="dataContent">
                 <div class="dataItem">
@@ -125,25 +125,8 @@
             <div class="guardText" :class="!showGuard ? 'guardLeft' : ''">Guardian mode enabled  <span class="arrow"></span></div>
         </div>
 
-         <!-- 咨询进度加载 -->
-         <div class="loadingWrap" v-show="showLoading">
-            <div class="loadingContent">
-                <div class="risaPhoto"></div>
-                <div class="loadingMain">
-                    <div class="loadingTextTitle">Professional Lawyer <span>Accident</span>. It's...</div>
-                    <div class="loadingLineWrap">
-                        <div class="loadingLine">
-                            <div class="loadingInner"><span></span></div>
-                        </div>
-                        <span class="loadingTextNum">99%</span>
-                    </div>
-                    
-                    <div class="loadingTextText">Question has been published, waiting 00:01</div>
-                </div>
-               
-            </div>
-        </div>
-
+      
+        <!-- 快捷咨询 -->
         <div class="askInfo">
             <div class="askTop">
                 <div class="askTitle">Suppose you want to ask.</div>
@@ -157,7 +140,43 @@
                 <span class="askTag">Family Wedding</span>
            </div>
         </div>
-        <div class="consultListWrap" v-if="showLawyerList">
+        <div v-for="(item, index) in messageList" :key="index + 989">
+            <div class="commentWrap" v-if="item.type == 'user'">
+                <div class="commentList">
+                    <div class="textContent">
+                        {{ item.text }}
+                    </div>
+                    <div class="avatar"></div>
+                </div>
+            </div>
+
+            <div class="lawyerWrap" v-if="item.type == 'lawyer'">
+                <div class="lawyerList">
+                    <div class="avatar1"></div>
+                    <div class="textContent" v-html="item.text">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- 咨询进度加载 -->
+        <div class="loadingWrap" v-show="showLoading">
+            <div class="loadingContent">
+                <div class="risaPhoto"></div>
+                <div class="loadingMain">
+                    <div class="loadingTextTitle">Professional Lawyer <span>Accident</span>. It's...</div>
+                    <div class="loadingLineWrap">
+                        <div class="loadingLine">
+                            <div class="loadingInner" :style="{ width: loadingProgress + '%' }"><span></span></div>
+                        </div>
+                        <span class="loadingTextNum">{{ loadingProgress }}%</span>
+                    </div>
+                    
+                    <div class="loadingTextText">Question has been published, waiting 00:01</div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="consultListWrap" v-show="showLawyerList">
             <div class="consultList">
                 <div class="consultTop">
                     <div class="consultTitle">
@@ -198,50 +217,35 @@
                 </Swiper>
             </div>
         </div>
-        <div v-for="(item, index) in messageList" :key="index + 989">
-            <div class="commentWrap" v-if="item.type == 'user'">
-                <div class="commentList">
-                    <div class="textContent">
-                        {{ item.text }}
+        <template v-if="test">
+            <div>
+                <div class="overText">— The consultation is over —</div>
+                <div class="evaluationText">Overall Service Evaluation</div>
+                <div class="evaluationWrap">
+                    <div class="evaluationList">
+                        <a href="javascript:;" class="evaluationBtn evaluationIcon1"></a>
+                        <a href="javascript:;" class="evaluationBtn evaluationIcon2"></a>
+                        <a href="javascript:;" class="evaluationBtn evaluationIcon3"></a>
+                        <a href="javascript:;" class="evaluationBtn evaluationIcon4"></a>
+                        <a href="javascript:;" class="evaluationBtn evaluationIcon5"></a>
                     </div>
-                    <div class="avatar"></div>
-                </div>
-            </div>
-
-            <div class="lawyerWrap" v-if="item.type == 'lawyer'">
-                <div class="lawyerList">
-                    <div class="avatar1"></div>
-                    <div class="textContent" v-html="item.text">
+                    <div class="evaluationTypeTitle">Select Project Type</div>
+                    <div class="evaluationTypeList">
+                        <a href="javascript:;" class="evaluationType evaluationTypeBtn">Contract disputes</a>
+                        <a href="javascript:;" class="evaluationType evaluationTypeBtn">Family Wedding</a>
+                    </div>
+                    <div class="evaluationTypeList">
+                        <a href="javascript:;" class="evaluationType evaluationTypeBtn">Property Disputes</a>
+                        <a href="javascript:;" class="evaluationType evaluationTypeBtn">Labor Disputes</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="overText">— The consultation is over —</div>
 
-        <div class="evaluationText">Overall Service Evaluation</div>
-        <div class="evaluationWrap">
-            <div class="evaluationList">
-                <a href="javascript:;" class="evaluationBtn evaluationIcon1"></a>
-                <a href="javascript:;" class="evaluationBtn evaluationIcon2"></a>
-                <a href="javascript:;" class="evaluationBtn evaluationIcon3"></a>
-                <a href="javascript:;" class="evaluationBtn evaluationIcon4"></a>
-                <a href="javascript:;" class="evaluationBtn evaluationIcon5"></a>
-            </div>
-            <div class="evaluationTypeTitle">Select Project Type</div>
-            <div class="evaluationTypeList">
-                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Contract disputes</a>
-                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Family Wedding</a>
-            </div>
-            <div class="evaluationTypeList">
-                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Property Disputes</a>
-                <a href="javascript:;" class="evaluationType evaluationTypeBtn">Labor Disputes</a>
-            </div>
-        </div>
+                <a href="javascript:;" class="continueBtn">Continue with Lawyer</a>
 
-        <a href="javascript:;" class="continueBtn">Continue with Lawyer</a>
-
-        <a href="javascript:;" class="chooseBtn">Choose another lawyer</a>
+                <a href="javascript:;" class="chooseBtn">Choose another lawyer</a>
+            </div>
+        </template>
+       
 
         <div class="legalWrap">
             <div class="legalMain">

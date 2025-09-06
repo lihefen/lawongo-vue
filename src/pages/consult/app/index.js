@@ -57,31 +57,60 @@ export default {
                 //     text: 'Hello, what question do you want to ask?',
                 // }
             ],
-            showGuard:true
+            showGuard:true,
+            loadingProgress:0,
+            loadingTimer:null,
+            test:false,
+            step:0
         };
     },
     methods: {
         consultHandle(id){
            window.location.href = `lawongo://lawyerPayOneActivity?chatType=1&lawyerId=${id}`;
         },
+        startLoading() {
+            this.step = 1;
+            this.showLoading = true;
+            this.scrollToBottom();
+            if(this.loadingTimer) {
+                clearInterval(this.loadingTimer);
+            }
+            this.loadingTimer = setInterval(() => {
+                if (Number(this.loadingProgress) >= 100) {
+                    clearInterval(this.loadingTimer);
+                    this.showLoading = false;
+                    setTimeout(() => {
+                        this.talkEvent();
+                    }, 300);
+                    return;
+                }
+                this.loadingProgress += 5;
+            }, 100);
+        },
         sendMessage() {
-            console.log('sendMessage');
             this.messageList.push({
                 type: 'user',
                 text: this.message,
             });
             this.message = '';
             setTimeout(() => {
+                this.startLoading();
+            }, 300);
+            
+        },
+        talkEvent() {
+            setTimeout(() => {
                 this.messageList.push({
                     type: 'lawyer',
                     text: 'Question has been posted, currently more free consultations, you are ranked <span style="color: rgba(255, 59, 59, 1);">189</span>, expected to wait<span span style="color: rgba(255, 59, 59, 1);"> 02 hours 59 minutes 33 seconds</span>'
                 });
             }, 300);
+            this.showLawyerList = true;
             setTimeout(() => {
                 this.scrollToBottom();
-            }, 400);
-            this.showLoading = true;
+            }, 50);
         },
+
         //滚动条滚动到底部
         scrollToBottom:function(){
             window.scrollTo(0, document.body.scrollHeight);

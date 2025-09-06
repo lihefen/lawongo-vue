@@ -77,6 +77,10 @@ export default {
     },
     methods: {
         async sendCode() {
+            if(!this.mobileVal) {
+                Toast('Please fill all the fields!')
+                return
+            }
            try {
                 console.log(this.mobileVal)
                 const dataText = JSON.stringify({
