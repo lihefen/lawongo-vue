@@ -133,11 +133,11 @@
                 <a href="javascript:;" class="changeBtn"><span></span>change</a>
             </div>
            <div class="askContent">
-                <span class="askTag">Work accident</span>
-                <span class="askTag">Criminal cases</span>
-                <span class="askTag">Labor Disputes</span>
-                <span class="askTag">Property Disputes</span>
-                <span class="askTag">Family Wedding</span>
+                <span class="askTag" @click="quickHandle('0')">Work accident</span>
+                <span class="askTag"  @click="quickHandle('0')">Criminal cases</span>
+                <span class="askTag"  @click="quickHandle('0')">Labor Disputes</span>
+                <span class="askTag"  @click="quickHandle('0')">Property Disputes</span>
+                <span class="askTag"  @click="quickHandle('0')">Family Wedding</span>
            </div>
         </div>
         <div v-for="(item, index) in messageList" :key="index + 989">

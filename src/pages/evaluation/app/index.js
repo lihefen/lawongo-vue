@@ -82,7 +82,6 @@ export default {
                 return
             }
            try {
-                console.log(this.mobileVal)
                 const dataText = JSON.stringify({
                     channel: 'io.lawongo.app',
                     mobile: this.mobileVal,

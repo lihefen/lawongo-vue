@@ -61,7 +61,21 @@ export default {
             loadingProgress:0,
             loadingTimer:null,
             test:false,
-            step:0
+            step:0,
+            quickList:[
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+                "Hello, I'm looking for a lawyer who can handle a work accident.",
+            ]
         };
     },
     methods: {
@@ -121,6 +135,9 @@ export default {
         guardHandle() {
             //
             this.showGuard = !this.showGuard;
+        },
+        quickHandle(index) {
+            this.message = this.quickList[index];
         }
         
     }
