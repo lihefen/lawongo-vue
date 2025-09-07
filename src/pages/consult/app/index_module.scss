@@ -224,7 +224,18 @@
         margin: 0 auto 0;
     }
     .dataItem {
+        position: relative;
         flex: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20px;
+            background: url(./images/data_line.png) no-repeat center center;
+            background-size: 100% 100%;
+            width: 1px;
+            height: 24px;
+        }
     }
     .dataNum {
         display: flex;
@@ -358,6 +369,7 @@
             }
         }
         .info {
+            position: relative;
             box-sizing: border-box;
             padding-left: 20px;
             .name {
@@ -424,7 +436,6 @@
                     ); 
                 }
             }
-            
         }
     }
 }
@@ -562,9 +573,11 @@
         }
     }
     .info {
+        position: relative;
         display: flex;
         padding-top: 20px;
         .infoItem {
+            position: relative;
             box-sizing: border-box;
             padding-left: 10px;
             &:nth-child(2) {
@@ -597,6 +610,16 @@
                 font-size: 20px;
                 color: #666;
                 text-align: center;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                right: -14px;
+                top: 20px;
+                background: url(./images/lawyer_line.png) no-repeat center center;
+                background-size: 100% 100%;
+                width: 1px;
+                height: 48px;
             }
         }
     }

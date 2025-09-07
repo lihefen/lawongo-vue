@@ -59,6 +59,7 @@ export default {
                     name:'Lawyer Riza',
                     id:"5",
                     sec:13,
+                    case:'800',
                     rp:'100,000',
                 },
                 {
