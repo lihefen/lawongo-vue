@@ -37,13 +37,16 @@ export default {
             ],
             consultList: [
                 {
-                    name:'Lawyer Edo'
+                    name:'Lawyer Edo',
+                    id:"4"
                 },
                 {
-                    name:'Lawyer Riza'
+                    name:'Lawyer Riza',
+                    id:"5"
                 },
                 {
-                    name:'Lawyer Farouq'
+                    name:'Lawyer Farouq',
+                    id:"6"
                 }
                
             ],
