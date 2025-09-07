@@ -1,6 +1,8 @@
 <template>
   <div class="main">
-    <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
+    <div class="header">
+        <a href="lawongo://back" class="backBtn"></a>
+    </div>
     <div class="banner">
     </div>
     <div class="mod introduction">
