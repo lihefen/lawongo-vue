@@ -73,6 +73,48 @@ export default {
                     name: '4'
                 }
             ],
+            teamList:[
+                {
+                    name:'Lawyer Edo',
+                    years:7,
+                    served:'1800',
+                    workArea:'Finacial Technology,Technology and E-Commerce',
+                },
+                {
+                    name:'Lawyer Riza',
+                    years:8,
+                    served:'2450',
+                    workArea:'Finacial Technology,Technology and E-Commerce',
+                },
+                {
+                    name:'Lawyer Farouq',
+                    years:6,
+                    served:'3680',
+                    workArea:'Finacial Technology,Technology and E-Commerce',
+                }
+            ],
+            voiceList:[
+                {
+                    text:'Debt decreases stress-free, business still runs smoothly every day.',
+                    photo:require('./images/photo_1.png')
+                },
+                {
+                    text:'Debt consolidation brings relief,now I can focus on making coffee without money worries',
+                    photo:require('./images/photo_4.png')
+                },
+                {
+                    text:'Debt restructuring eases my financial burden, I can still work professionally as a freelancer while paying off my debt.',
+                    photo:require('./images/photo_2.png')
+                },
+                {
+                    text:'No problem, orders keep coming in smoothly.',
+                    photo:require('./images/photo_3.png')
+                },
+                {
+                    text:'Successfully reduced issues for me and the company due to late debt payments, while also protecting my rights',
+                    photo:require('./images/photo_5.png')
+                }
+            ]
         };
     },
     methods: {

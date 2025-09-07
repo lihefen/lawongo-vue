@@ -30,12 +30,12 @@
         <div class="title2"></div>
         <div class="teamMain">
             <Swiper class="teamSwiper" :options="swiperOptionTeam">
-                <SwiperSlide>
+                <SwiperSlide v-for="(item,index) in teamList" :key="index + 989">
                     <div class="swiperItem">
                         <div class="content">
                             <div class="person">
-                                <div class="photo1"></div>
-                                <div class="name">Lawyer Zhang </div>
+                                <div class="photo" :class="`photo${index + 1}`"></div>
+                                <div class="name">{{ item.name }}</div>
                                 <div class="starList">
                                     <span class="star"></span>
                                     <span class="star"></span>
@@ -45,10 +45,10 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <div class="year"><span>Duration：</span>7 years</div>
-                                <div class="served"><span>served：</span>1000+person</div>
+                                <div class="year"><span>Duration：</span>{{item.years}} years</div>
+                                <div class="served"><span>served：</span>{{ item.served }}+person</div>
                                 <div class="work">
-                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
+                                    <span>Work area：</span>{{ item.workArea }}
                                 </div>
                             </div>
                         </div>
@@ -56,57 +56,6 @@
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="content">
-                            <div class="person">
-                                <div class="photo2"></div>
-                                <div class="name">Lawyer Zhang </div>
-                                <div class="starList">
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="year"><span>Duration：</span>8 years</div>
-                                <div class="served"><span>served：</span>1000+person</div>
-                                <div class="work">
-                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="content">
-                            <div class="person">
-                                <div class="photo3"></div>
-                                <div class="name">Lawyer Zhang </div>
-                                <div class="starList">
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="year"><span>Duration：</span>6 years</div>
-                                <div class="served"><span>served：</span>1000+person</div>
-                                <div class="work">
-                                    <span>Work area：</span>P2P Overdue，Credit Card Default，Multiple Loans
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </SwiperSlide>
             </Swiper>
         </div>
         <div class="title3"></div>
@@ -137,57 +86,13 @@
         <div class="title4"></div>
         <div class="voiceMain">
             <Swiper class="voiceSwiper" :options="swiperOptionVoice">
-                <SwiperSlide>
+                <SwiperSlide v-for="(item,index) in voiceList" :key="index + 123">
                     <div class="swiperItem">
                         <div class="photo">
-                            <img src="./images/photo_1.png" width="100%"  alt="">
+                            <img :src="item.photo" width="100%"  alt="">
                         </div>
                         <div class="text">
-                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="photo">
-                            <img src="./images/photo_2.png" width="100%"  alt="">
-                        </div>
-                        <div class="text">
-                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="photo">
-                            <img src="./images/photo_3.png" width="100%"  alt="">
-                        </div>
-                        <div class="text">
-                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="photo">
-                            <img src="./images/photo_4.png" width="100%"  alt="">
-                        </div>
-                        <div class="text">
-                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="swiperItem">
-                        <div class="photo">
-                            <img src="./images/photo_5.png" width="100%"  alt="">
-                        </div>
-                        <div class="text">
-                            “When they said I qualified, it was like a stone had been lifted off of me that I had been carrying around.”
+                            {{ item.text }}
                         </div>
                     </div>
                 </SwiperSlide>
