@@ -202,15 +202,15 @@
                                 </div>
                                 <div class="info">
                                     <div class="infoItem">
-                                        <div class="sec"><span>18</span> sec.</div>
+                                        <div class="sec"><span>{{ item.sec }}</span> sec.</div>
                                         <div class="secText">Response <br/>Speed</div>
                                     </div>
                                     <div class="infoItem">
-                                        <div class="case"><span>9939</span> products</div>
+                                        <div class="case"><span>{{ item.case }}+</span> products</div>
                                         <div class="caseText">Resolved <br/>cases</div>
                                     </div>
                                 </div>
-                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn"  @click="consultHandle(6)" >Consult</a></div>
+                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn"  @click="consultHandle(item.id)" >Consult</a></div>
                             </div>
                         </div>
                     </SwiperSlide>
