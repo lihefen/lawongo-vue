@@ -8,6 +8,10 @@
 -->
 <template>
   <div class="main">
+    <div class="header">
+        <a href="lawongo://aiActivity" class="backBtn"></a>
+    </div>
+    
     <!-- <common-header title="Konsultasi Telepon Cepat" :showBack="true" backPath="/" /> -->
     <div class="banner">
     </div>

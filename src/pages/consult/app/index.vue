@@ -104,11 +104,8 @@
                                     <span class="order">80 Consultants</span>
                                 </div>
                                 <div class="tagList">
-                                    <div class="tagItem">
-                                        <span class="tag">Family Wedding</span>
-                                    </div>
-                                    <div class="tagItem">
-                                        <span class="tag">Criminal cases</span>
+                                    <div class="tagItem" v-for="(tag,i) in item.tag" :key="i+76">
+                                        <span class="tag">{{ tag }}</span>
                                     </div>
                                 </div>
                                
