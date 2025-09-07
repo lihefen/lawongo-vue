@@ -24,15 +24,27 @@ export default {
             lawyerList: [
                 {
                     name:'Lawyer Edo',
-                    year: '7'
+                    year: '7',
+                    tag:[
+                        'Finacial Technology',
+                        'Technology and E-Commerce',
+                    ]
                 },
                 {
                     name:'Lawyer Farouq',
-                    year: '6'
+                    year: '6',
+                    tag:[
+                        'Finacial Technology',
+                        'Technology and E-Commerce',
+                    ]
                 },
                 {
                     name:'Lawyer Riza',
-                    year: '8'
+                    year: '8',
+                    tag:[
+                        'Finacial Technology',
+                        'Technology and E-Commerce',
+                    ]
                 }
             ],
             consultList: [
@@ -41,18 +53,20 @@ export default {
                     id:"4",
                     sec:12,
                     case:'700',
+                    rp:'100,000',
                 },
                 {
                     name:'Lawyer Riza',
                     id:"5",
                     sec:13,
-                    case:'800',
+                    rp:'100,000',
                 },
                 {
                     name:'Lawyer Farouq',
                     id:"6",
                     sec:11,
                     case:'600',
+                    rp:'100,000',
                 }
                
             ],

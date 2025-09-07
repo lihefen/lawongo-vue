@@ -210,7 +210,7 @@
                                         <div class="caseText">Resolved <br/>cases</div>
                                     </div>
                                 </div>
-                                <div class="rp">Rp100<a href="javascript:;" class="consultBtn"  @click="consultHandle(item.id)" >Consult</a></div>
+                                <div class="rp">Rp{{ item.rp }}<a href="javascript:;" class="consultBtn"  @click="consultHandle(item.id)" >Consult</a></div>
                             </div>
                         </div>
                     </SwiperSlide>
